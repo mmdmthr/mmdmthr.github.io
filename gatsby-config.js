@@ -1,7 +1,7 @@
 const metaConfig = require('./gatsby-meta-config')
 
 module.exports = {
-  pathPrefix: "/devjurnal.github.io",
+  pathPrefix: "/",
   siteMetadata: metaConfig,
   plugins: [
     {
