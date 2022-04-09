@@ -82,7 +82,7 @@ module.exports = {
         short_name: metaConfig.title,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#1d2740`,
         display: `minimal-ui`,
         icon: metaConfig.icon,
       },
@@ -96,8 +96,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://your-blog.netlify.app',
-        sitemap: 'https://your-blog.netlify.app/sitemap.xml',
+        host: 'https://devjurnal.com',
+        sitemap: 'https://devjurnal.com/sitemap.xml',
         policy: [
           {
             userAgent: '*',
