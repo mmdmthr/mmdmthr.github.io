@@ -1,7 +1,7 @@
 ---
 title: Memulai Jadi Programmer
 date: 2020-07-15
-category: 'notes'
+category: 'how to'
 ---
 
 Untuk memulai jadi programmer, ada beberapa hal yang perlu kita cari tahu sebelumnya
