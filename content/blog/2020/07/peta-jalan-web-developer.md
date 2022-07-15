@@ -1,7 +1,7 @@
 ---
 title: Peta Jalan Web Developer
 date: 2020-07-15
-category: 'resources'
+category: 'notes'
 ---
 
 Sebagai seorang web developer, kita bisa melihat peta jalan di situs [roadmap.sh](https://roadmap.sh/) untuk memberikan gambaran yang lebih jelas dalam melangkah di belantara hutan pemrograman web. Peta jalan ini tentu bukan rujukan mutlak, itu ditulis berdasarkan pengalaman seseorang dan dilengkapi oleh komunitas. Peta jalan itu akan membantu kita untuk menyusun urutan dan prioritas teknologi atau tools apa yang harus kita kuasai di setiap tahapannya.

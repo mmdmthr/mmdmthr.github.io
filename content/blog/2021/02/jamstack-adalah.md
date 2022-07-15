@@ -1,7 +1,7 @@
 ---
 title: JAMStack Adalah
 date: 2021-02-16T07:26:03.284Z
-category: 'resources'
+category: 'notes'
 ---
 
 JAMstack adalah arsitektur software yang disusun dari 3 komponen: Javascript, API, dan Markup. Arsitektur JAMStack dirancang untuk membuat website lebih cepat, lebih aman, dan lebih mudah untuk diskalakan. Prinsip inti JAMStack adalah _pre-rendering_ dan _decoupling_.

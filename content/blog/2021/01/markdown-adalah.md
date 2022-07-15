@@ -1,7 +1,7 @@
 ---
 title: Markdown adalah
 date: 2021-01-30T07:26:03.284Z
-category: 'resources'
+category: 'notes'
 ---
 
 Markdown adalah bahasa markup ringan untuk memformat plain teks menggunakan editor teks biasa yang kemudian diubah menjadi HTML terstruktur. Jadi, kita bisa membuat format teks bold atau membuat list menggunakan notepad tanpa menulis tag HTML.

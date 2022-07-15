@@ -1,7 +1,7 @@
 ---
 title: NPM Adalah
 date: 2021-02-20
-category: 'resources'
+category: 'notes'
 ---
 
 NPM (_Node Package Manager_) adalah pengelola paket default untuk runtime JavaScript Node.js. NPM dibuat pada tahun 2009 sebagai proyek open source untuk membantu pengembang JavaScript berbagi paket modul kode dengan mudah. NPM terdiri dari dua bagian utama: di sisi kita sebagai klien menggunakan command line interface (CLI) untuk menginstall dan menerbitkan paket, dan repositori online atau disebut npm registry yang menghosting paket-paket kode open source Javascript seperti Node.JS, aplikasi web front-end, aplikasi mobile, robot, router, dan kebutuhan lain yang tak terhitung jumlahnya dari komunitas JavaScript. Banyak paket kode yang diterbitkan di NPM dengan berbagai macam fungsinya bisa mempercepat proses pengembangan web kita.

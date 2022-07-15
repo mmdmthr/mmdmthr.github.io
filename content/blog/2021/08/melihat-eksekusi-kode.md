@@ -1,7 +1,7 @@
 ---
 title: Melihat Eksekusi Kode, Langkah demi Langkah
 date: 2021-08-16
-category: 'resources'
+category: 'notes'
 ---
 
 [Python Tutor](https://pythontutor.com) membantu orang-orang melewati hambatan dalam belajar pemrograman yaitu: 

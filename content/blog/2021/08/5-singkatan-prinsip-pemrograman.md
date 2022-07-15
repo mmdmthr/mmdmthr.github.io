@@ -1,7 +1,7 @@
 ---
 title: 5 Singkatan Prinsip Pemrograman
 date: 2021-08-28
-category: 'resources'
+category: 'notes'
 ---
 
 Mengarungi industri teknologi, khususnya di bidang 

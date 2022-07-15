@@ -1,7 +1,7 @@
 ---
 title: Markdown Cheatseet
 date: 2021-02-13T07:26:03.284Z
-category: 'resources'
+category: 'notes'
 ---
 
 ### Sintaks Dasar

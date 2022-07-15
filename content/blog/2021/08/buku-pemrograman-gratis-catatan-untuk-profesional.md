@@ -1,7 +1,7 @@
 ---
 title: Buku Pemrograman Gratis - Seri Catatan untuk Profesional
 date: 2021-08-14
-category: 'resources'
+category: 'notes'
 ---
 
 Membaca adalah cara tercepat untuk menyerap informasi. Salah satu website yang 
