@@ -1,7 +1,7 @@
 ---
 title: Film Dokumenter Sejarah Vue JS
 date: 2021-07-10
-category: 'story'
+category: 'notes'
 ---
 
 Dimulai dari proyek sampingan saat bekerja di Google, 

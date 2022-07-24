@@ -1,7 +1,7 @@
 ---
 title: Film Dokumenter Bill Gates
 date: 2021-02-26
-category: 'story'
+category: 'notes'
 ---
 
 Selepas menyerahkan kepemimpinan perusahaan kepada penerusnya, Bill Gates fokus pada upaya mengatasi masalah masyarakat terutama di negara-negara berkembang melalui yayasannya. Film dokumenter Netflix berjudul Inside Bill's Brain: Decoding Bill Gates ini mengisahkan tentang visi Bill Gates untuk mewujudkan dunia yang lebih baik.

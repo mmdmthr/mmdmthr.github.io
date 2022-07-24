@@ -1,7 +1,7 @@
 ---
 title: Visi Elon Musk
 date: 2021-03-13
-category: 'story'
+category: 'notes'
 ---
 
 Elon Musk adalah tokoh bisnis, penemu dan seorang industrialis kondang. Dia mendirikan dan memimpin beberapa perusahaan teknologi sejak usia sangat muda. Dimulai dari PayPal, Tesla, SpaceX dll. Saat ini dia menjadi salah satu orang yang berada di jajaran orang terkaya di dunia. Kepiawaiannya mengelola bisnis dan menemukan teknologi-teknologi canggih didorong oleh visinya untuk masa depan.
