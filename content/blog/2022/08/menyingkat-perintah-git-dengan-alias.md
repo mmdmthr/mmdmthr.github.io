@@ -1,6 +1,6 @@
 ---
 title: Menyingkat Perintah Git dengan Alias
-date: 2022-06-07
+date: 2022-08-07
 category: 'git'
 ---
 
