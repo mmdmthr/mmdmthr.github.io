@@ -1,6 +1,6 @@
 ---
 title: Kompromi dalam Pengembangan Perangkat Lunak
-date: 2023-05-16
+date: 2023-05-13
 category: 'notes'
 ---
 
