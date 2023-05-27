@@ -14,3 +14,5 @@ jobs:
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
+        env:
+          NPM_CONFIG_LEGACY_PEER_DEPS: true
