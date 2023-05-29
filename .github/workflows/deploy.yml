@@ -10,19 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-          uses: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: Setup Python
-          uses: actions/setup-python@v4
-          with:
-            python-version: '3.10'
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
       - name: Use Node.js
-          uses: actions/setup-node@v2
-          with:
-            node-version: '16'
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
       - name: Gatsby Publish
         uses: enriikke/gatsby-gh-pages-action@v2
-          with:
-            access-token: ${{ secrets.ACCESS_TOKEN }}
-            deploy-branch: gh-pages
-          env:
-            NPM_CONFIG_LEGACY_PEER_DEPS: true
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: gh-pages
+        env:
+          NPM_CONFIG_LEGACY_PEER_DEPS: true
