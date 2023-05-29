@@ -68,14 +68,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: metaConfig.ga,
-        head: true,
-        anonymize: true,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: metaConfig.title,
@@ -96,8 +88,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://devjurnal.com',
-        sitemap: 'https://devjurnal.com/sitemap.xml',
+        host: 'https://www.devjurnal.com',
+        sitemap: 'https://www.devjurnal.com/sitemap.xml',
         policy: [
           {
             userAgent: '*',
