@@ -103,7 +103,12 @@ module.exports = {
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    {
+        resolve: `gatsby-plugin-sass`,
+        options: {
+          implementation: require("sass"),
+        },
+    },
     `gatsby-plugin-lodash`,
     `gatsby-plugin-sitemap`,
     {
