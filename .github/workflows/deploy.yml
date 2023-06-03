@@ -11,14 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      - name: Use Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
       - name: Gatsby Publish
         uses: enriikke/gatsby-gh-pages-action@v2
         with:
