@@ -46,6 +46,4 @@ Langkah dalam menggunakan GitHub Action secara garis besar sebagai berikut
 
 4. Menyimpan dan Mengaktifkan: Simpan file konfigurasi dan unggah ke repositori GitHub Kita. GitHub Action secara otomatis akan mengaktifkan dan menjalankan alur kerja otomatis sesuai dengan konfigurasi yang telah ditentukan.
 
-## Kesimpulan
-
-GitHub Action adalah alat yang sangat berguna dalam meningkatkan efisiensi pengembangan perangkat lunak. Dengan otomatisasi alur kerja dan integrasi yang kuat dengan repositori GitHub, GitHub Action membantu tim pengembang mengurangi waktu dan usaha yang diperlukan dalam pengujian, pembangunan, dan pengiriman perangkat lunak. Dengan menggunakan GitHub Action, Kita dapat menciptakan alur kerja pengembangan yang efisien, terintegrasi, dan terpusat di repositori GitHub Kita.
+Panduan lengkap membuat CI/CD dengan GitHub Action dapat dibaca pada artikel berikut [Membuat CI/CD dengan GitHub Action](/2023/06/membuat-ci-cd-dengan-github-action/)
