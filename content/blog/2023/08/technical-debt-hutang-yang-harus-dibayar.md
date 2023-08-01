@@ -69,3 +69,6 @@ Untuk mengatasi hutang teknis, perlu adanya komitmen dari seluruh tim pengembang
 - **Meningkatkan Kolaborasi**: Pastikan seluruh anggota tim berkomunikasi dan berkolaborasi dengan baik untuk memastikan pengetahuan tentang proyek selalu terbagi dengan baik.
 
 Dengan menerapkan langkah-langkah ini, tim pengembangan dapat mengurangi dan mencegah akumulasi hutang teknis, sehingga proyek dapat berjalan lebih lancar dan lebih efisien.
+
+Sumber:
+[Refactoring Guru - Technical Debt](https://refactoring.guru/refactoring/technical-debt)
