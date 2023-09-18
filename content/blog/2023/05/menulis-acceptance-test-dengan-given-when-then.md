@@ -1,7 +1,7 @@
 ---
 title: Menulis Acceptance Test dengan Formula Given-When-Then
 date: 2023-05-20
-category: 'notes'
+category: 'testing'
 ---
 
 Dalam pengembangan perangkat lunak, *Given-When-Then* merupakan sebuah formula atau template yang bertujuan untuk memandu penulisan *acceptance test* (pengujian penerimaan) terhadap *User Story*. Formula ini terdiri dari tiga bagian, yaitu:

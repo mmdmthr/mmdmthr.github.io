@@ -1,7 +1,7 @@
 ---
 title: Aturan FIRST dalam Clean Test
 date: 2022-08-01
-category: 'notes'
+category: 'testing'
 ---
 
 Dalam buku Clean Code, Uncle Bob menjelaskan tentang lima aturan Clean Tests 
