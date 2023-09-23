@@ -1,7 +1,7 @@
 ---
 title: Unit Test - Klasifikasi
 date: 2023-03-25
-category: 'notes'
+category: 'testing'
 ---
 
 Sebelum membuat *test case* apa pun, kita perlu menentukan 

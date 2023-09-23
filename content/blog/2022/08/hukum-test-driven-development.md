@@ -1,7 +1,7 @@
 ---
 title: Tiga Hukum Test Driven Development
 date: 2022-08-17
-category: 'notes'
+category: 'testing'
 ---
 
 ### Hukum Pertama 
