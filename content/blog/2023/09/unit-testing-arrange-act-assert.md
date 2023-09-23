@@ -8,23 +8,25 @@ Unit testing adalah salah satu praktik yang penting dalam pengembangan perangkat
 
 ### 1. _Arrange_
 
-Mengeset input dan target. Langkah-langkah pengaturan ini dilakukan untuk menyiapkan sebuah kasus pengujian. Apakah tes ini memerlukan objek atau pengaturan khusus? Apakah perlu menyiapkan database? Apakah perlu masuk ke aplikasi web? Tangani semua operasi ini di awal pengujian.
+Mengeset input dan target. Langkah-langkah pengaturan ini dilakukan untuk menyiapkan sebuah kasus pengujian. Pikirkan apakah tes ini memerlukan objek atau pengaturan khusus? Apakah perlu menyiapkan database? Apakah perlu masuk ke aplikasi web atau membuat sebuah request http? Tangani semua operasi ini di bagian awal pengujian.
 
 ### 2. _Act_
 
-Jalankan perilaku (behavior) yang ditargetkan. Langkah-langkah act ini harus mencakup hal utama yang akan diuji. Ini bisa berupa pemanggilan fungsi atau metode, pemanggilan REST API, atau interaksi dengan halaman web. Jaga agar tindakan yang dijalankan tetap fokus pada perilaku sasaran.
+Jalankan perilaku (_behavior_) yang ditargetkan. Langkah-langkah _act_ ini mencakup hal utama yang akan diuji. Ini bisa berupa pemanggilan fungsi atau metode, pemanggilan REST API, atau interaksi dengan halaman web. Jaga agar tindakan yang dijalankan tetap fokus pada perilaku sasaran.
 
 ### 3. _Assert_
 
-Periksa hasil yang diharapkan. Langkah-langkah act harus menimbulkan semacam respons. Langkah-langkah assert ini memverifikasi benar atau ssalahnya respons tersebut. Terkadang, pernyataan sesederhana memeriksa nilai numerik atau string. Di lain waktu, mereka mungkin memerlukan pemeriksaan beberapa aspek dari suatu sistem. Assertion pada akhirnya akan menentukan apakah pengujian berhasil atau gagal.
+Periksa hasil yang diharapkan. Hasil dari menjalankan langkah act harus menimbulkan semacam respons. Nah, langkah assert ini adalah saat kita memverifikasi benar atau salahnya respons tersebut. Contohnya memeriksa nilai numerik atau string, mengecek response berupa json. Atau, kita mungkin memerlukan pemeriksaan beberapa aspek dari suatu sistem. Assertion pada akhirnya akan menentukan apakah pengujian berhasil atau gagal.
 
-Dalam panduan ini, kita akan memberikan contoh penggunaan AAA dalam unit testing dengan Laravel.
+## Contoh
 
-Mari kita bayangkan kita memiliki sebuah model Laravel yang sederhana untuk mengelola buku. Kita ingin menguji metode `hitungJumlahBuku` yang bertanggung jawab menghitung jumlah total buku dalam database.
+Kita akan melihat contoh penggunaan AAA dalam unit testing dengan Laravel.
 
-## Langkah 1: Atur (Arrange)
+Bayangkan kita memiliki sebuah model Laravel yang sederhana untuk mengelola buku. Kita ingin menguji method `hitungJumlahBuku` yang bertanggung jawab menghitung jumlah total buku dalam database.
 
-Pertama, kita akan menyiapkan kondisi awal untuk tes kita. Ini mungkin melibatkan pengaturan basis data tes, membuat objek model, atau mempersiapkan kondisi lain yang diperlukan.
+### Langkah 1: Atur (Arrange)
+
+Pertama, kita akan menyiapkan kondisi awal untuk tes kita. Ini mungkin melibatkan pengaturan database tes, membuat objek model, atau mempersiapkan kondisi lain yang diperlukan.
 
 ```php
 public function testHitungJumlahBuku()
@@ -44,9 +46,9 @@ public function testHitungJumlahBuku()
 }
 ```
 
-Pada langkah ini, kita membuat beberapa buku dalam basis data tes dan kemudian membuat objek model Buku.
+Pada langkah ini, kita membuat beberapa buku dalam database tes dan kemudian membuat objek model Buku.
 
-## Langkah 2: Lakukan (Act)
+### Langkah 2: Lakukan (Act)
 
 Kemudian, kita menjalankan metode atau fungsi yang ingin kita uji. Dalam hal ini, kita memanggil metode `hitungJumlahBuku` dari objek model `Buku`.
 
@@ -54,7 +56,7 @@ Kemudian, kita menjalankan metode atau fungsi yang ingin kita uji. Dalam hal ini
 $jumlahBuku = $buku->hitungJumlahBuku();
 ```
 
-## Langkah 3: Verifikasi (Assert)
+### Langkah 3: Verifikasi (Assert)
 
 Langkah terakhir adalah memverifikasi hasil tes dengan menggunakan pernyataan "assert" untuk memeriksa apakah hasilnya sesuai dengan harapan kita.
 
@@ -64,14 +66,6 @@ $this->assertEquals(2, $jumlahBuku);
 
 Dalam contoh ini, kita memeriksa apakah `$jumlahBuku` sama dengan 2, karena kita telah menambahkan dua buku ke dalam basis data tes pada langkah pertama.
 
-## Menjalankan Unit Test
-
-Untuk menjalankan unit test ini, kita dapat menggunakan perintah `php artisan test` di terminal. Pastikan bahwa tes tersebut berada dalam direktori yang sesuai di dalam proyek Laravel kita.
-
-```bash
-php artisan test
-```
-
 Jika semua tes berjalan dengan sukses, kita akan melihat pesan bahwa tes tersebut berhasil. Namun, jika ada kesalahan dalam kode atau hasilnya tidak sesuai dengan harapan, kita akan melihat pesan kesalahan yang membantu kita melacak masalahnya.
 
-Dengan menggunakan pendekatan Arrange, Act, dan Assert dalam unit testing Laravel, kita dapat memastikan bahwa kode kita berfungsi dengan benar dan dapat mengidentifikasi masalah lebih awal dalam siklus pengembangan. Unit testing adalah salah satu praktik terbaik dalam pengembangan perangkat lunak yang dapat meningkatkan keandalan dan kualitas perangkat lunak kita secara keseluruhan.
+Dengan menggunakan pendekatan _Arrange_, _Act_, dan _Assert_ dalam unit testing, kita dapat memastikan bahwa kode kita berfungsi dengan benar dan dapat mengidentifikasi masalah lebih awal dalam siklus pengembangan. Unit testing adalah salah satu praktik terbaik dalam pengembangan perangkat lunak yang dapat meningkatkan keandalan dan kualitas perangkat lunak kita secara keseluruhan.
