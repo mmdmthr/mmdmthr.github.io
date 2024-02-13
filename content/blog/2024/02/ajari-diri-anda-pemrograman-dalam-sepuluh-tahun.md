@@ -25,7 +25,7 @@ Singkatnya, jika kita adalah seorang programmer Basic, kita bisa belajar menulis
 dan kekurangan dari C++. Satu contoh lain adalah kita perlu belajar sedikit tentang JavaScript karena perlu membuat sebuah interface dari program yang sudah ada. 
 Yang sebenarnya terjadi adalah kita tidak sedang mempelajari bagaimana untuk memrogram; kita hanya belajar bagaimana melakukan hal tersebut. Jadi apa gunanya?
 
->  “Sebuah bahasa pemrogramman yang tidak mengubah cara berpikir anda tentang pemrograman, tidak berguna untuk dipelajari.” - Alan Perlis
+>  “Sebuah bahasa pemrograman yang tidak mengubah cara berpikir anda tentang pemrograman, tidak berguna untuk dipelajari.” - Alan Perlis
 
 ## Mengapa Belajar dalam Sepuluh Tahun?
 Banyak bukti ilmiah yang menunjukkan bahwa perlu waktu yang panjang bagi seseorang untuk mengembangkan keahliannya.
@@ -37,10 +37,10 @@ dan terakhir dari sebuah kelas dan bertanya kepada mereka berapa lama mereka lat
   > Setiap orang, dari ketiga group ini, mulai bermain kira-kira pada umur yang sama, sekitar umur 3 – 5 tahun.
   > Dalam tahun-tahun pertama ini, semua latihan sekitar 2 – 3 jam seminggu. Tetapi sekitar umur 8 tahun, perbedaan yang sesungguhnya mulai muncul.
   > 
-  > Murid-murid yang akan menjadi terbaik di kelasnya mulai berlatih lebih banyak dari yg lainnya:
-  > 6 jam seminggu pada umur 9
-  > 8 jam seminggu pada umur 12
-  > 16 jam seminggu pada umur 14
+  > Murid-murid yang akan menjadi terbaik di kelasnya mulai berlatih lebih banyak dari yg lainnya:  
+  > 6 jam seminggu pada umur 9  
+  > 8 jam seminggu pada umur 12  
+  > 16 jam seminggu pada umur 14  
   > dan terus bertambah hingga saat mereka berumur 20 tahun mereka berlatih lebih dari 30 jam seminggu.
   >
   > Saat mereka berumur 20 tahun, orang-orang terbaik ini telah berlatih selama 10,000 jam dalam hidup mereka.
