@@ -4,9 +4,7 @@ date: 2024-02-14
 category: 'notes'
 ---
 
-Satu artikel menarik ditulis oleh Peter Norvig tenatang belajar pemrograman.
-Kita bisa membaca versi aslinya di sini: [Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html) dan 
-versi bahasa Indonesia: [Belajar Programming Sendiri Dalam Sepuluh Tahun](https://djitz.com/other-resources/djitzlosophy/belajar-programming-sendiri-dalam-sepuluh-tahun/). 
+Satu artikel menarik ditulis oleh Peter Norvig tentang belajar pemrograman. Kita bisa membaca versi aslinya di sini [Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html) dan versi bahasa Indonesia [Belajar Programming Sendiri Dalam Sepuluh Tahun](https://djitz.com/other-resources/djitzlosophy/belajar-programming-sendiri-dalam-sepuluh-tahun/). 
 Saya merasa perlu menulis ulang ini di blog untuk mempermudah saya :)
 
 ## Mengapa semua orang terburu-buru?
