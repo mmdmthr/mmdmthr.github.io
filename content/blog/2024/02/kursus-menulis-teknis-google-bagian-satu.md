@@ -4,7 +4,7 @@ date: 2024-02-25
 category: 'notes'
 ---
 
-Ini adalah ringkasan dari [Kursus Menulis Teknis Google](https://developers.google.com/tech-writing) bagian satu.
+Ini adalah ringkasan dari [Kursus Menulis Teknis Google](https://developers.google.com/tech-writing/one) bagian satu.
 
 > Every engineer is also a writer.
 
