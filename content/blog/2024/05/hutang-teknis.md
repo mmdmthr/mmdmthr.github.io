@@ -1,12 +1,12 @@
 ---
-title: 'Hutang Teknis'
+title: 'Hutang Teknis (Technical Debt)'
 date: 2024-05-05
 category: 'notes'
 ---
 
 Metodologi Agile menekankan pentingnya siklus umpan balik yang cepat, dalam hitungan jam atau beberapa hari. Memperlambat proses umpan balik demi mencapai kesempurnaan yang seolah-olah bisa dicapai bisa merusak fleksibilitas kita. Biaya dari penundaan tersebut adalah nyata dan sering kali jauh melebihi biaya pengembangan. Menunda rilis produk demi mencari pengetahuan yang sempurna dianggap sebagai sebuah praktik yang tidak bertanggung jawab. Hal tersebut sangat mahal sampai dapat mengancam kelangsungan perusahaan.
 
-Ini adalah latar belakang dari konsep "Hutang Teknis".
+Ini adalah latar belakang dari konsep "Hutang Teknis" atau Technical Debt.
 
 Dalam praktik Agile, kita sengaja merilis kode agar dapat memperoleh pembelajaran. Hutang teknis didasarkan pada prinsip Agile bahwa merilis kode yang berfungsi secara minimal—tanpa fitur tambahan—adalah langkah yang baik untuk mendapatkan umpan balik. Kita menyadari bahwa kode yang kita rilis tidak akan sempurna. Ini bukan berarti kode tersebut bermasalah, tetapi masih memiliki kekurangan yang bisa diperbaiki. Dengan cara ini, menukarkan kesempurnaan dengan umpan balik yang cepat biasanya akan membawa kita mendekati kesempurnaan lebih cepat. Dengan membiarkan diri kita "berutang" dalam hal perbaikan kode, kita dapat membayar utang tersebut dengan cepat melalui pembelajaran dari umpan balik dan pengalaman. 
 
