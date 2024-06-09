@@ -8,12 +8,12 @@ category: 'notes'
 
 Contoh URL
 ```
-https://blog.devjurnal.com:8080/subscribe?utm_source=menu#nowhere
+https://blog.mmdmthr.github.io:8080/subscribe?utm_source=menu#nowhere
 ```
 |  |  |
 |--|--|
 |`https://` | = protocol |
-|`blog.devjurnal.com` | = domain name |
+|`blog.mmdmthr.github.io` | = domain name |
 |`:8080` | = port |
 |`/subscribe` | = path |
 |`?` | = query |
@@ -28,7 +28,7 @@ URL (*Uniform Resource Locator*) adalah alamat yang digunakan untuk mengidentifi
 
 2. **Nama Domain (*Domain Name*)**
 
-    Nama domain merupakan identifikasi unik untuk mengarahkan ke alamat IP yang sesuai dengan server yang menghosting sumber daya yang ingin diakses. Pada contoh URL di atas, nama domain adalah "blog.devjurnal.com". Nama domain ini mengarahkan ke server yang menyediakan konten atau sumber daya yang ingin diakses.
+    Nama domain merupakan identifikasi unik untuk mengarahkan ke alamat IP yang sesuai dengan server yang menghosting sumber daya yang ingin diakses. Pada contoh URL di atas, nama domain adalah "blog.mmdmthr.github.io". Nama domain ini mengarahkan ke server yang menyediakan konten atau sumber daya yang ingin diakses.
 
 3. ***Port***
 

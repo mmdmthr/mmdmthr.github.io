@@ -26,7 +26,7 @@ Nama alias bisa apa saja yang kita inginkan, asalkan belum digunakan oleh perint
 Misalnya, alias di bawah ini akan membuka situs web di Chrome:
 
 ```bash
-alias devjurnal="chrome https://devjurnal.com"
+alias devjurnal="chrome https://mmdmthr.github.io"
 ```
 
 Jika saya mengetik devjurnal di terminal baru, URL tersebut akan terbuka di Chrome.
