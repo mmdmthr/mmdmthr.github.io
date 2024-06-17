@@ -1,5 +1,5 @@
 ---
-title: 'Rekomendasi Buku Software Engineering dan Karir'
+title: 'Rekomendasi Buku Software Engineering, Karir dan Pengembangan Diri'
 date: 2024-06-21
 category: 'notes'
 ---
@@ -10,8 +10,7 @@ Berikut adalah beberapa buku tentang rekayasa perangkat lunak, karir dan pengemb
 | --- | --- |
 | *97 Things Every Programmer Should Know: Compilation of Essays from Programmer* | Shirish Padalkar |
 | *A Common Sense Guide to Data Structure and Algorithms* | Jay Wengrow |
-| *An Elegant Puzzle: Systems of Engineering Management* | Will Larson
- |
+| *An Elegant Puzzle: Systems of Engineering Management* | Will Larson |
 | *Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman* | David H. Hoover and Adewale Oshineye|
 | *Clean Code: A Handbook of Agile Software Craftsmanship* | Robert C. Martin |
 | *Code Complete: A Practical Handbook of Software Construction* | Steve McConnell |
