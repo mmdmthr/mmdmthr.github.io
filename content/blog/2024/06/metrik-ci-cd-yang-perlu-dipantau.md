@@ -4,7 +4,7 @@ date: 2024-06-14
 category: 'notes'
 ---
 
-_Continuous Integration_ dan _Continuous Deployment_ (CI/CD) adalah praktik penting dalam pengembangan perangkat lunak modern. Untuk memastikan bahwa proses CI/CD berjalan dengan efisien dan efektif, ada beberapa metrik yang perlu kita pantau. Berikut adalah lima metrik CI/CD yang penting untuk dilacak:
+_Continuous Integration_ dan _Continuous Deployment_ (CI/CD) adalah praktik penting dalam pengembangan perangkat lunak modern. Untuk memastikan bahwa proses CI/CD berjalan dengan efisien dan efektif, ada beberapa metrik yang perlu kita pantau. Salah satu pendekatan yang efektif adalah menggunakan DORA Metrics. DORA Metrics, yang diperkenalkan oleh tim riset dari Google Cloud, memberikan wawasan berharga tentang efektivitas dan efisiensi tim DevOps. DORA Metrics adalah serangkaian metrik yang dirancang untuk mengukur kinerja dan kemampuan tim DevOps dalam merilis perangkat lunak. Metrik ini memungkinkan organisasi untuk memahami sejauh mana tim mereka dapat mengimplementasikan praktik-praktik DevOps yang baik dan mencapai kecepatan serta stabilitas yang diinginkan. Berikut adalah lima metrik CI/CD yang penting untuk dilacak:
 
 ## 1. Build Time
 
@@ -20,10 +20,10 @@ Lead time untuk perubahan mengukur berapa lama waktu yang dibutuhkan dari saat k
 
 ## 4. Change Failure Rate
 
-Tingkat kegagalan perubahan mengukur persentase perubahan yang berujung pada kegagalan. Metrik ini penting karena perubahan yang sering gagal bisa menunjukkan adanya masalah dalam kualitas kode atau proses pengujian. Tingkat kegagalan yang lebih rendah menunjukkan bahwa tim kita berhasil menjaga kualitas dan stabilitas kode.
+Tingkat kegagalan perubahan mengukur persentase perubahan yang berujung pada kegagalan. Metrik ini penting karena perubahan yang sering gagal bisa menunjukkan adanya masalah dalam kualitas kode atau proses pengujian. Tingkat kegagalan yang lebih rendah menunjukkan bahwa tim kita berhasil menjaga kualitas dan stabilitas kode. Di sini kita perlu mencatat keberhasilan dan kegagalan setelah deployment dilakukan.
 
-## 5. Mean time to recovery
+## 5. Mean Time to Recovery
 
-Waktu rata-rata untuk pemulihan mengukur seberapa cepat kita bisa pulih ketika terjadi masalah. Metrik ini sangat penting karena setiap kegagalan atau downtime bisa berdampak negatif pada pengguna. Semakin cepat kita bisa memulihkan sistem, semakin sedikit dampak yang dirasakan oleh pengguna.
+Waktu rata-rata untuk pemulihan mengukur seberapa cepat kita bisa pulih ketika terjadi masalah. Metrik ini sangat penting karena setiap kegagalan atau downtime bisa berdampak negatif pada pengguna. Semakin cepat kita bisa memulihkan sistem, semakin sedikit dampak yang dirasakan oleh pengguna. Pada praktiknya dalam dokumen kegagalan deployment, kita mencatat waktu pertama kali terjadinya insiden. Lalu mencatat kembali waktu saat insiden berhasil ditangani dan layanan pulih kembali.
 
 Dengan memantau metrik-metrik ini, kita dapat memperoleh wawasan berharga tentang efisiensi dan efektivitas proses CI/CD. Hal ini memungkinkan kita untuk membuat keputusan yang lebih baik dan terus meningkatkan kualitas perangkat lunak yang kita kembangkan.
