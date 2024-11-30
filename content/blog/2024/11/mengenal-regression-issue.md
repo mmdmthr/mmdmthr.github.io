@@ -44,6 +44,10 @@ Untuk menghindari regression dalam software development, kita menggunakan regres
 
   Dengan sistem CI, setiap perubahan yang di-push ke repository akan langsung diuji secara otomatis.
 
+## Praktik Regression Testing
+
+Salah satu pengalaman di tempat saya bekerja, regression testing dilakukan saat kandidat rilis (bug fix/fitur) berada di staging. Tim QA akan menjalankan automated testing dengan berbagai skenario pengujian yang sudah dibuat sebelumnya (mencakup mayoritas fungsional di dalam sebuah app). Skenario tersebut diperbarui jika ada fitur baru yang ditambahkan. Beberapa bagian yang belum ter-cover automated testing akan ditinjau secara manual. Dengan menjalankan serangkaian pengujian di seluruh fungsional perangkat lunak, QA dapat menangkap issue di bagian lain dari sistem yang mungkin terdampak oleh perubahan sebelum rilis. 
+
 ## Pelajaran dari TV Rusak
 
 Cerita TV ini memberi kita beberapa pelajaran penting yang relevan, baik dalam kehidupan sehari-hari maupun pengembangan perangkat lunak:
