@@ -52,6 +52,7 @@ Kalau tidak hati-hati, kita bisa berhenti berkembang. Padahal dunia terus berger
 Kurva ini bikin saya sadar bahwa performa bukan cuma soal jam terbang, tapi juga soal kesadaran dan niat untuk terus naik level. Tidak ada jalan pintas dari pemula menuju ahli.
 Setiap fase punya tantangan masing-masing, dan yang paling bahaya adalah merasa cukup padahal belum.  
 
-> *"Jangan puas hanya karena kamu nggak perlu mikir keras lagi — bisa jadi kamu cuma udah berhenti belajar."* Jangan terjebak di zona nyaman. Otomatisasi skill bukan berarti selesai belajar.
+> *"Jangan puas hanya karena kamu nggak perlu mikir keras lagi — bisa jadi kamu cuma udah berhenti belajar."*
+Jangan terjebak di zona nyaman. Otomatisasi skill bukan berarti selesai belajar.
 
-Refleksi dan tantangan baru sangat penting. Itu yang membedakan mastery sejati dari stagnasi. Sekarang, ketika muncul perasaan perjalanan saya datar-datar aja dan cukup nyaman, terpantik di pikiran untuk coba lihat lagi: kamu ada di fase mana? Apa langkah berikutnya? Karena perjalanan ini belum selesai. Dan yang sudah merasa ‘ahli’ justru harus lebih waspada — terhadap rasa puas diri.
+Refleksi dan tantangan baru sangat penting. Itu yang membedakan mastery sejati dari stagnasi. Sekarang, setiap muncul perasaan perjalanan saya datar-datar aja dan cukup nyaman, terpantik di pikiran untuk coba lihat lagi: kamu ada di fase mana? Apa langkah berikutnya? Karena perjalanan ini belum selesai. Dan yang sudah merasa ‘ahli’ justru harus lebih waspada — terhadap rasa puas diri.
