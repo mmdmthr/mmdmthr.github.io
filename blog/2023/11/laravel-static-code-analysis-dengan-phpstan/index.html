@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-bvzihdzo> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="Dev Jurnal" href="https://mmdmthr.github.io/rss.xml"><meta name="generator" content="Astro v5.7.10"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://mmdmthr.github.io/blog/2023/11/laravel-static-code-analysis-dengan-phpstan/"><!-- Primary Meta Tags --><title>Static Code Analysis dengan PHPStan</title><meta name="title" content="Static Code Analysis dengan PHPStan"><meta name="description" content><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://mmdmthr.github.io/blog/2023/11/laravel-static-code-analysis-dengan-phpstan/"><meta property="og:title" content="Static Code Analysis dengan PHPStan"><meta property="og:description" content><meta property="og:image" content="https://mmdmthr.github.io/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://mmdmthr.github.io/blog/2023/11/laravel-static-code-analysis-dengan-phpstan/"><meta property="twitter:title" content="Static Code Analysis dengan PHPStan"><meta property="twitter:description" content><meta property="twitter:image" content="https://mmdmthr.github.io/blog-placeholder-1.jpg"><style>:root{--accent: #2337ff;--accent-dark: #000d8a;--black: 15, 18, 25;--gray: 96, 115, 159;--gray-light: 229, 233, 240;--gray-dark: 34, 41, 57;--gray-gradient: rgba(var(--gray-light), 50%), #fff;--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%)}@font-face{font-family:Atkinson;src:url(/fonts/atkinson-regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Atkinson;src:url(/fonts/atkinson-bold.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}body{font-family:Atkinson,sans-serif;margin:0;padding:0;text-align:left;background:linear-gradient(var(--gray-gradient)) no-repeat;background-size:100% 600px;word-wrap:break-word;overflow-wrap:break-word;color:rgb(var(--gray-dark));font-size:20px;line-height:1.7}main{width:720px;max-width:calc(100% - 2em);margin:auto;padding:3em 1em}h1,h2,h3,h4,h5,h6{margin:0 0 .5rem;color:rgb(var(--black));line-height:1.2}h1{font-size:3.052em}h2{font-size:2.441em}h3{font-size:1.953em}h4{font-size:1.563em}h5{font-size:1.25em}strong,b{font-weight:700}a,a:hover{color:var(--accent)}p{margin-bottom:1em}.prose p{margin-bottom:2em}textarea{width:100%;font-size:16px}input{font-size:16px}table{width:100%}img{max-width:100%;height:auto;border-radius:8px}code{padding:2px 5px;background-color:rgb(var(--gray-light));border-radius:2px}pre{padding:1.5em;border-radius:8px}pre>code{all:unset}blockquote{border-left:4px solid var(--accent);padding:0 0 0 20px;margin:0;font-size:1.333em}hr{border:none;border-top:1px solid rgb(var(--gray-light))}@media (max-width: 720px){body{font-size:18px}main{padding:1em}}.sr-only{border:0;padding:0;margin:0;position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:inset(50%);white-space:nowrap}a[data-astro-cid-eimmu3lg]{display:inline-block;text-decoration:none}a[data-astro-cid-eimmu3lg].active{font-weight:bolder;text-decoration:underline}header[data-astro-cid-3ef6ksr2]{margin:0;padding:0 1em;background:#fff;box-shadow:0 2px 8px rgba(var(--black),5%)}h2[data-astro-cid-3ef6ksr2]{margin:0;font-size:1em}h2[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2],h2[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2].active{text-decoration:none}nav[data-astro-cid-3ef6ksr2]{display:flex;align-items:center;justify-content:space-between}nav[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2]{padding:1em .5em;color:var(--black);border-bottom:4px solid transparent;text-decoration:none}nav[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2].active{text-decoration:none;border-bottom-color:var(--accent)}.social-links[data-astro-cid-3ef6ksr2],.social-links[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2]{display:flex}@media (max-width: 720px){.social-links[data-astro-cid-3ef6ksr2]{display:none}}footer[data-astro-cid-sz7xmlte]{padding:2em 1em 6em;background:linear-gradient(var(--gray-gradient)) no-repeat;color:rgb(var(--gray));text-align:center}.social-links[data-astro-cid-sz7xmlte]{display:flex;justify-content:center;gap:1em;margin-top:1em}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]{text-decoration:none;color:rgb(var(--gray))}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]:hover{color:rgb(var(--gray-dark))}
+main[data-astro-cid-bvzihdzo]{width:calc(100% - 2em);max-width:100%;margin:0}.hero-image[data-astro-cid-bvzihdzo]{width:100%}.hero-image[data-astro-cid-bvzihdzo] img[data-astro-cid-bvzihdzo]{display:block;margin:0 auto;border-radius:12px;box-shadow:var(--box-shadow)}.prose[data-astro-cid-bvzihdzo]{width:720px;max-width:calc(100% - 2em);margin:auto;padding:1em;color:rgb(var(--gray-dark))}.title[data-astro-cid-bvzihdzo]{margin-bottom:1em;padding:1em 0;text-align:center;line-height:1}.title[data-astro-cid-bvzihdzo] h1[data-astro-cid-bvzihdzo]{margin:0 0 .5em}.date[data-astro-cid-bvzihdzo]{margin-bottom:.5em;color:rgb(var(--gray))}.last-updated-on[data-astro-cid-bvzihdzo]{font-style:italic}
+</style></head> <body data-astro-cid-bvzihdzo> <header data-astro-cid-3ef6ksr2> <nav data-astro-cid-3ef6ksr2> <h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>Dev Jurnal</a></h2> <div class="internal-links" data-astro-cid-3ef6ksr2> <a href="/" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Home </a>  <a href="/blog" class="active" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Blog </a>  <a href="/about" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> About </a>  </div> <div class="social-links" data-astro-cid-3ef6ksr2> <a href="https://github.com/mmdmthr" target="_blank" data-astro-cid-3ef6ksr2> <span class="sr-only" data-astro-cid-3ef6ksr2>Go to Hari's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" data-astro-cid-3ef6ksr2><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-3ef6ksr2></path></svg> </a> </div> </nav> </header>  <main data-astro-cid-bvzihdzo> <article data-astro-cid-bvzihdzo> <div class="hero-image" data-astro-cid-bvzihdzo> <img width="1020" height="510" src="/blog-placeholder-2.jpg" alt="" data-astro-cid-bvzihdzo> </div> <div class="prose" data-astro-cid-bvzihdzo> <div class="title" data-astro-cid-bvzihdzo> <div class="date" data-astro-cid-bvzihdzo> <time datetime="2023-11-25T00:00:00.000Z"> Nov 25, 2023 </time>  </div> <h1 data-astro-cid-bvzihdzo>Static Code Analysis dengan PHPStan</h1> <hr data-astro-cid-bvzihdzo> </div>  <p>Analisis kode statis adalah metode evaluasi program dengan memeriksa kode sebelum dieksekusi. Ini dilakukan dengan memeriksa set kode berdasarkan sejumlah aturan penulisan kode (type variable, return value, dsb). Analisis statis dijalankan sebelum pengujian perangkat lunak dimulai. Proses ini dilakukan untuk menjamin bahwa kode yang kita kirim untuk diuji sesuai dengan standar kualitas tertinggi. Ini juga memberikan umpan balik otomatis sehingga para pengembang akan mengetahui masalah-masalah tersebut lebih awal, yang membuatnya lebih mudah dan lebih murah untuk memperbaiki masalah tersebut.</p>
+<h3 id="apa-yang-dibawa-phpstan">Apa yang Dibawa PHPStan?</h3>
+<p>Ketika pertama kali melihat repositori PHPStan, ada klaim yang kontroversial…</p>
+<blockquote>
+<p>“PHPStan berfokus pada menemukan kesalahan dalam kode Anda tanpa benar-benar menjalankannya. Ini menangkap seluruh kelas bug bahkan sebelum Anda menulis tes untuk kode tersebut. Ini memindahkan PHP lebih dekat ke bahasa yang dikompilasi dalam arti bahwa kebenaran setiap baris kode dapat diperiksa sebelum Anda menjalankan baris tersebut sebenarnya.”</p>
+</blockquote>
+<p>PHPStan memiliki banyak level aturan, dan seperti yang dapat Anda lihat, semakin tinggi tingkat yang kita pilih, semakin banyak kesalahan yang kita dapatkan. Sekarang pertanyaannya, tingkat mana yang harus kita pilih? Nah, pertama-tama kita perlu tahu apa aturan dari setiap tingkat.</p>
+<h4 id="tingkat-aturan">Tingkat Aturan</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Tingkat</th><th>Nama</th><th>Detail</th></tr></thead><tbody><tr><td>00</td><td><em>Basic Checks</em></td><td>Memeriksa kelas-kelas, fungsi atau method yang tidak ditemukan yang dipanggil pada $this, jumlah argumen yang salah yang dimasukkan ke method dan fungsi tersebut, variabel yang selalu tidak terdefinisi.</td></tr><tr><td>01</td><td>$this <em>Unknowns</em></td><td>Variabel yang mungkin tidak terdefinisi, method dan properti ajaib yang tidak diketahui pada kelas dengan method __call dan __get.</td></tr><tr><td>02</td><td><em>Methods</em></td><td>Method yang tidak diketahui diperiksa pada semua ekspresi (bukan hanya $this), memvalidasi PHPDocs.</td></tr><tr><td>03</td><td><em>Types</em></td><td>Memeriksa tipe return, tipe yang ditugaskan ke properti.</td></tr><tr><td>04</td><td><em>Dead Code</em></td><td>Pemeriksaan dasar kode yang sudah tidak terpakai - selalu false instanceof dan pemeriksaan tipe lainnya, if else mati, kode yang tidak terjangkau setelah return; dll.</td></tr><tr><td>05</td><td><em>Arguments</em></td><td>Memeriksa tipe argumen yang dimasukkan sebagai parameter pada method dan fungsi.</td></tr><tr><td>06</td><td><em>Type Hints</em></td><td>Melaporkan kurangnya petunjuk tipe (argument atau return value).</td></tr><tr><td>07</td><td><em>Union Types</em></td><td>Melaporkan sebagian salahnya tipe gabungan, jika Anda memanggil metode yang hanya ada pada beberapa tipe dalam tipe gabungan, level 7 mulai melaporkan hal tersebut.</td></tr><tr><td>08</td><td><em>Nullable Types</em></td><td>Melaporkan panggilan metode dan akses ke properti pada tipe yang dapat bernilai null.</td></tr><tr><td>09</td><td><em>Mixed Type</em></td><td>Menjadi sangat ketat tentang tipe campuran, satu-satunya operasi yang diizinkan yang dapat Anda lakukan dengannya adalah meneruskannya ke tipe campuran lainnya.</td></tr></tbody></table>
+<h4 id="berkas-konfigurasi">Berkas Konfigurasi</h4>
+<p>PHPStan menggunakan berkas konfigurasi, phpstan.neon atau phpstan.neon.dist, yang memungkinkan Anda:</p>
+<ul>
+<li>Mendefinisikan path yang akan dianalisis.</li>
+<li>Menetapkan tingkat aturan.</li>
+<li>Mengecualikan path.</li>
+<li>Menyertakan ekstensi PHPStan.</li>
+<li>Mengabaikan kesalahan.</li>
+<li>Menentukan jumlah maksimum proses paralel.</li>
+</ul>
+<p>Berikut adalah contoh berkas konfigurasi sederhana yang secara default berada di direktori root aplikasi Anda, tetapi Anda dapat mempelajari lebih lanjut dari <a href="https://phpstan.org/config-reference">referensi konfigurasi</a>.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="yaml"><code><span class="line"><span style="color:#85E89D">includes</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">    - </span><span style="color:#9ECBFF">./vendor/nunomaduro/larastan/extension.neon</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#85E89D">parameters</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#85E89D">    paths</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">        - </span><span style="color:#9ECBFF">app</span></span>
+<span class="line"><span style="color:#E1E4E8">        - </span><span style="color:#9ECBFF">config</span></span>
+<span class="line"><span style="color:#E1E4E8">        - </span><span style="color:#9ECBFF">database</span></span>
+<span class="line"><span style="color:#E1E4E8">        - </span><span style="color:#9ECBFF">routes</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">    # Tingkat 9 adalah tingkat tertinggi</span></span>
+<span class="line"><span style="color:#85E89D">    level</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">5</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#85E89D">    ignoreErrors</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">        - </span><span style="color:#9ECBFF">'#PHPDoc tag @var#'</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#85E89D">    parallel</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#85E89D">        maximumNumberOfProcesses</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">4</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#85E89D">    noUnnecessaryCollectionCall</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">false</span></span>
+<span class="line"><span style="color:#85E89D">    checkMissingIterableValueType</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">false</span></span></code></pre>
+<h4 id="mengabaikan-kesalahan">Mengabaikan Kesalahan</h4>
+<p>Kemungkinan besar, Anda akan perlu mengabaikan beberapa kesalahan yang untungnya diizinkan dengan dua cara berbeda:</p>
+<ol>
+<li>
+<p>Secara langsung menggunakan tag PHPDoc</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="php"><code><span class="line"><span style="color:#F97583">function</span><span style="color:#E1E4E8"> () {</span></span>
+<span class="line"><span style="color:#6A737D">    /** @phpstan-ignore-next-line */</span></span>
+<span class="line"><span style="color:#79B8FF">    echo</span><span style="color:#E1E4E8"> $foo;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">    echo</span><span style="color:#E1E4E8"> $bar </span><span style="color:#6A737D">/** @phpstan-ignore-line */</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+</li>
+<li>
+<p>Dari berkas konfigurasi dan ini sebenarnya lebih bersih</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="yaml"><code><span class="line"><span style="color:#85E89D">parameters</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#85E89D">    ignoreErrors</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">        -</span></span>
+<span class="line"><span style="color:#85E89D">            message</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">'Access to an undefined property [a-zA-Z0-9\_]+::\$foo'</span></span>
+<span class="line"><span style="color:#85E89D">            path</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">some/dir/someFile.php</span></span>
+<span class="line"><span style="color:#E1E4E8">        -</span></span>
+<span class="line"><span style="color:#85E89D">            message</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">'#Call to an undefined method [a-zA-Z0-9\_]+::doFoo()#'</span></span>
+<span class="line"><span style="color:#85E89D">            path</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">other/dir/DifferentFile.php</span></span>
+<span class="line"><span style="color:#85E89D">            count</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">2</span><span style="color:#6A737D"> # opsional, dan itu akan mengabaikan dua kemunculan pertama kesalahan</span></span>
+<span class="line"><span style="color:#E1E4E8">      -</span></span>
+<span class="line"><span style="color:#85E89D">            message</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">'#Call to an undefined method [a-zA-Z0-9\_]+::doBar()#'</span></span>
+<span class="line"><span style="color:#85E89D">            paths</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">                - </span><span style="color:#9ECBFF">some/dir/*</span></span>
+<span class="line"><span style="color:#E1E4E8">                - </span><span style="color:#9ECBFF">other/dir/*</span></span></code></pre>
+</li>
+</ol>
+<p>Selengkapnya bisa dibaca di documentasi <a href="https://phpstan.org/user-guide/getting-started">https://phpstan.org/user-guide/getting-started</a></p>  </div> </article> </main> <footer data-astro-cid-sz7xmlte>
+&copy; 2025 @mmdmthr. All rights reserved.
+<div class="social-links" data-astro-cid-sz7xmlte> <a href="https://github.com/mmdmthr" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Go to Hari's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github" data-astro-cid-sz7xmlte><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-sz7xmlte></path></svg> </a> </div> </footer>  </body></html>
