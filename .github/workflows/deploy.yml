@@ -1,4 +1,4 @@
-name: Gatsby Publish
+name: Deploy Astro to GitHub Pages
 
 on:
   push:
@@ -6,19 +6,26 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Use Node.js
+
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
-      - name: Gatsby Publish
-        uses: enriikke/gatsby-gh-pages-action@v2
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          deploy-branch: gh-pages
-        env:
-          NPM_CONFIG_LEGACY_PEER_DEPS: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
