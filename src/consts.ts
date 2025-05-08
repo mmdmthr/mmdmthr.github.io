@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = 'Dev Jurnal';
 export const SITE_DESCRIPTION = 'My notes in public space';
+export const GA_MEASUREMENT_ID = "G-GVQKMM834T";
