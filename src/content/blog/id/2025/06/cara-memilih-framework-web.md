@@ -59,3 +59,5 @@ Masih ada banyak faktor lain, seperti:
 ### Kesimpulan
 
 Jika kita benar-benar sedang memulai, fokus pada framework yang mudah dipelajari, punya dokumentasi bagus, dan komunitas yang aktif. Dokumentasi yang jelas dan komunitas yang suportif adalah aset utama dalam hal ini.
+
+Referensi: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/First_steps/Web_frameworks#how_to_select_a_web_framework
