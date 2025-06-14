@@ -29,7 +29,7 @@ const posts = await getCollection('blog');
 			  <h5 class="mt-10">📝 Latest Posts</h5>
 			  <ul>
 				{posts
-				  .slice(0, 3)
+				  .slice(0, 5)
 				  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
 				  .map((post) => (
 					<li>
