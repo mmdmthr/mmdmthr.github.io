@@ -16,9 +16,23 @@ Contoh penggunaan formula *Given-When-Then*:
 - *When I attempt to withdraw an amount less than my card’s limit* (saya mencoba menarik dana dalam jumlah kurang dari batas kartu saya),
 - *Then a particular set of observable consequences should obtain* (penarikan dana harus berhasil tanpa adanya kesalahan atau peringatan),
 
+---
+
+### 🧾 Asal-usul: Gherkin dan Behavior-Driven Development (BDD)
+
+Formula *Given-When-Then* berasal dari **bahasa Gherkin**, yang merupakan bagian dari pendekatan **Behavior-Driven Development (BDD)**.  
+Gherkin dirancang agar dapat dibaca oleh orang "non-teknis", dan digunakan oleh berbagai alat seperti [Cucumber](https://cucumber.io/) untuk menghubungkan spesifikasi dengan implementasi kode.
+
+Tujuannya adalah menyusun skenario yang bisa **dipahami dan divalidasi oleh seluruh stakeholder** — termasuk developer, QA, product owner, bahkan klien non-teknis — tanpa ambigu.
+
+---
+
 ### Manfaat
 
-Formula *Given-When-Then* membantu dalam merancang *acceptance test* dengan lebih terstruktur dan jelas. Bagian *Given* memberikan konteks atau kondisi awal yang diperlukan sebelum menjalankan aksi atau tindakan. Bagian *When* menyatakan aksi atau tindakan yang akan diuji. Sedangkan bagian *Then* menyatakan hasil atau konsekuensi yang diharapkan setelah aksi dilakukan.
+Formula *Given-When-Then* membantu dalam merancang *acceptance test* dengan lebih terstruktur dan jelas. 
+- *Given* memberikan konteks atau kondisi awal yang diperlukan sebelum menjalankan aksi atau tindakan. 
+- *When* menyatakan aksi atau tindakan yang akan diuji. 
+- *Then* menyatakan hasil atau konsekuensi yang diharapkan setelah aksi dilakukan.
 
 Dengan menggunakan formula ini, tim pengembang perangkat lunak dapat memastikan bahwa *User Story* atau cerita pengguna telah memenuhi persyaratan yang telah ditentukan. Penggunaan formula *Given-When-Then* juga membantu mempermudah komunikasi antara anggota tim pengembang (*developer*), penguji (QA), dan pemangku kepentingan lainnya, sehingga meminimalkan risiko kesalahpahaman.
 
