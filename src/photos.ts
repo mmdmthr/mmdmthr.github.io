@@ -21,7 +21,7 @@ const photos = files
     .map((file) => {
         // Try to extract dimensions from filename (format: name.WIDTHxHEIGHT.ext)
         const matcher = file.match(/^(.*)\.(\d+)x(\d+)\.(.*)$/);
-        
+
         let width: number;
         let height: number;
         
@@ -31,8 +31,8 @@ const photos = files
             height = Number.parseInt(matcher[3], 10);
         } else {
             // Fallback dimensions for files without dimensions in filename
-            width = 900;
-            height = 600;
+            width = 960;
+            height = 640;
         }
 
         return {
@@ -46,4 +46,5 @@ const photos = files
             })),
         } as Photo;
 });
+
 export default photos;
