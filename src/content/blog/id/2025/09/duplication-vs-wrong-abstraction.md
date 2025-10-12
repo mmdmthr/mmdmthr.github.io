@@ -8,7 +8,7 @@ tags: 'notes'
 
 Ada satu _tech talk_ terkenal dari Sandi Metz berjudul [*All The Little Things*](https://www.youtube.com/watch?v=8bZh5LMaSmE). Salah satu kutipan yang paling sering diingat adalah:
 
-> “Duplication is far cheaper than the wrong abstraction.”
+> Duplication is far cheaper than the wrong abstraction.
 
 *Duplikasi jauh lebih murah dibanding abstraksi yang salah.* Artinya, jangan buru-buru membuat abstraksi hanya karena takut ada kode yang mirip/duplikat. Abstraksi yang salah justru bisa menyulitkan di masa depan. Itu bisa bikin kode sulit dipahami dan akhirnya lebih mahal untuk dipelihara.
 
