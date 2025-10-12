@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import FormattedDate from './FormattedDate';
 
-export default function SearchBar({ posts }) {
+export default function SearchBar({ posts, baseUrl = '/blog' }) {
   const [query, setQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
 
@@ -51,7 +51,7 @@ export default function SearchBar({ posts }) {
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
               <h2 className="text-lg font-medium">
                 <a 
-                  href={`/blog-id/${post.id}/`}
+                  href={`${baseUrl}/${post.id}/`}
                   className="text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 group-hover:text-primary-600 dark:group-hover:text-primary-400"
                 >
                   {post.data.title}

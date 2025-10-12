@@ -30,7 +30,7 @@ const posts = (await getCollection('blogId')).sort(
 				</header>
 				
 				<section>
-					<SearchBar client:load posts={posts} />
+					<SearchBar client:load posts={posts} baseUrl="/blog-id" />
 				</section>
 			</div>
 		</main>
