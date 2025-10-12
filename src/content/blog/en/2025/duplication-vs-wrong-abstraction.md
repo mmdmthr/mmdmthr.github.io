@@ -8,7 +8,7 @@ tags: 'notes'
 
 There’s a well-known tech talk by Sandi Metz called [*All The Little Things*](https://www.youtube.com/watch?v=8bZh5LMaSmE). One of the most quoted lines is:
 
-> “Duplication is far cheaper than the wrong abstraction.”
+> Duplication is far cheaper than the wrong abstraction.
 
 In other words, don’t rush into abstraction just because you’re afraid of duplicate code. The wrong abstraction will hurt you more in the long run. It can make the code harder to understand and ultimately more expensive to maintain.
 

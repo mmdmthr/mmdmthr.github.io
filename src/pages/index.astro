@@ -10,39 +10,78 @@ const posts = await getCollection('blog');
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
 		<Header />
-		<main>
-			<h3>Hi, I’m Hari 👋</h3>
-			<p>
-				I’m a software developer who builds tools that help people work better — whether it’s automating internal processes, launching MVPs, or supporting growing teams with clean and maintainable code.
-			  </p>
+		<main class="content-container py-16">
+			<!-- Hero Section -->
+			<section class="max-w-3xl mx-auto text-center mb-16">
+				<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+					Hi, I'm <span class="text-primary-600 dark:text-primary-400">Hari</span> 👋
+				</h1>
+				
+				<div class="prose-vitesse text-lg leading-relaxed space-y-6">
+					<p class="text-gray-700 dark:text-gray-300">
+						I'm a software developer who builds tools that help people work better — whether it's automating internal processes, launching MVPs, or supporting growing teams with clean and maintainable code.
+					</p>
 
-			  <p>
-				This blog is where I share thoughts on software development, tech, solo projects, and life. I also reflect on work, habits, and sustainability. You can learn more <a href="/about">about me here</a>, or check out my <a href="/id">posts in Bahasa Indonesia</a>.
-			  </p>
+					<p class="text-gray-700 dark:text-gray-300">
+						This blog is where I share thoughts on software development, tech, solo projects, and life. I also reflect on work, habits, and sustainability. You can learn more <a href="/about" class="text-primary-600 dark:text-primary-400 hover:underline">about me here</a>, or check out my <a href="/blog-id" class="text-primary-600 dark:text-primary-400 hover:underline">posts in Bahasa Indonesia</a>.
+					</p>
+				</div>
+			</section>
 		  
-			  <h5 class="mt-10">📝 Latest Posts</h5>
-			  <ul>
-				{posts
-				  .slice(0, 5)
-				  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
-				  .map((post) => (
-					<li>
-					  <FormattedDate date={post.data.pubDate} />
-					  <a href={`/blog/${post.id}/`} class="text-blue-600 hover:underline">
-						{post.data.title}
-					  </a>
-					</li>
-				  ))}
-				  <p>
-					<a href="/blog" class="text-blue-600 hover:underpne">Read more posts</a>
-				  </li>
-			  </ul>
+			<!-- Latest Posts Section -->
+			<section class="max-w-3xl mx-auto">
+				<h2 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-8 flex items-center">
+					📝 Latest Posts
+				</h2>
+				
+				<div class="space-y-6">
+					{posts
+						.slice(0, 5)
+						.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+						.map((post) => (
+							<article class="group border-b border-gray-200 dark:border-gray-800 pb-6 last:border-b-0">
+								<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+									<h3 class="text-lg font-medium">
+										<a 
+											href={`/blog/${post.id}/`} 
+											class="text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 group-hover:text-primary-600 dark:group-hover:text-primary-400"
+										>
+											{post.data.title}
+										</a>
+									</h3>
+									<time class="text-sm text-gray-500 dark:text-gray-400 flex-shrink-0">
+										<FormattedDate date={post.data.pubDate} />
+									</time>
+								</div>
+								
+								{post.data.description && (
+									<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+										{post.data.description}
+									</p>
+								)}
+							</article>
+						))
+					}
+				</div>
+				
+				<div class="mt-8 text-center">
+					<a 
+						href="/blog" 
+						class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors duration-200"
+					>
+						Read more posts 
+						<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+						</svg>
+					</a>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
