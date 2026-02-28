@@ -14,9 +14,7 @@ Tulisan ini adalah refleksi pribadi — rangkuman hal-hal yang paling membentuk 
 
 ## Tim: Bekerja di Dalam Ekosistem Platform
 
-aku bekerja dalam satu **service team** kecil berisi sekitar 5–7 orang. Namun tim ini hanyalah satu bagian dari sistem yang jauh lebih besar.
-
-Produk yang kami bangun adalah sebuah **platform**, sehingga terdapat banyak service team lain yang menangani domain berbeda. Artinya:
+Aku bekerja dalam sebuah **service team** kecil berisi sekitar 5–7 orang. Namun tim ini hanyalah satu bagian dari sistem yang jauh lebih besar. Produk yang kami bangun adalah sebuah **platform**, sehingga terdapat banyak service team lain yang menangani domain berbeda. Artinya:
 
 * setiap tim memiliki tanggung jawab service masing-masing,
 * perubahan di satu tim bisa berdampak ke tim lain,
@@ -63,25 +61,23 @@ aku belajar:
 
 Hal yang paling membedakan pengalaman ini adalah budaya kerja.
 
-**Transparansi**
+**Transparansi**  
 Setiap progress dan obstacle dibagikan secara terbuka. Masalah bukan untuk disembunyikan, tetapi diselesaikan bersama.
 
-**Work-life balance**
+**Work-life balance**  
 Dalam lebih dari empat tahun, aku hanya sekali lembur sekitar satu jam. Delivery tetap berjalan tanpa budaya heroism.
 
-**Kolaboratif**
+**Kolaboratif**  
 Diskusi teknis berlangsung terbuka lintas role dan lintas negara.
 
-**Continuous learning**
-Leadership engineering membagikan best practice dan perspektif arsitektur, terutama jika kita bertanya.
-
-aku mulai memahami bahwa budaya kerja bukan slogan HR — ia sangat menentukan kualitas software yang dihasilkan.
+**Continuous learning**  
+Leadership engineering membagikan best practice dan perspektif arsitektur, terutama jika kita bertanya. Aku mulai memahami bahwa budaya kerja bukan slogan HR — ia sangat menentukan kualitas software yang dihasilkan.
 
 ---
 
 ## Proses: Scrum yang Berfungsi Sebagai Sistem Berpikir
 
-aku mendapatkan training Scrum secara formal di proyek ini.
+Aku mendapatkan training Scrum secara formal saat bekerja di proyek ini.
 
 Perbedaannya terasa jelas: Scrum tidak diperlakukan sebagai ritual meeting, tetapi sebagai cara mengelola kompleksitas.
 
@@ -130,19 +126,23 @@ Selama perjalanan ini aku bekerja dengan stack berikut:
 * PHPStan
 * Snyk
 
-aku mulai melihat software bukan sekadar aplikasi, tetapi sistem hidup yang harus bisa diobservasi, diuji, dan diamankan.
+Aku mulai melihat software bukan sekadar aplikasi, tetapi sistem hidup yang harus bisa diobservasi, diuji, dan diamankan.
 
 ---
 
 ## Apa yang Aku Kerjakan
 
-Product development: Berpartisipasi dalam perencanaan produk dari sisi teknis, mengembangkan fitur baru, serta membangun dan memelihara internal library untuk meningkatkan efisiensi tim.
+**Product development**  
+Berpartisipasi dalam perencanaan produk dari sisi teknis, mengembangkan fitur baru, serta membangun dan memelihara internal library untuk meningkatkan efisiensi tim.
 
-Integrasi Sistem: Mengintegrasikan layanan pihak ketiga termasuk SSO (OAuth, JWT), Adobe Sign, Fixflo.
+**Integrasi Sistem**  
+Mengintegrasikan layanan pihak ketiga termasuk SSO (OAuth, JWT), Adobe Sign, Fixflo.
 
-Kualitas Kode & Testing: Menjaga standar kualitas melalui code review, refaktor kode lama, serta menulis unit test dan feature test.
+**Kualitas Kode & Testing**  
+Menjaga standar kualitas melalui code review, refaktor kode lama, serta menulis unit test dan feature test.
 
-Performa & Pemeliharaan: Memantau dan mengoptimalkan performa berdasarkan metrik yang ditentukan, menangani perbaikan bug, dan menyusun dokumentasi teknis yang lengkap. Selama di sana aku juga terlibat 2 kali framework version upgrade.
+**Performa & Pemeliharaan**  
+Memantau dan mengoptimalkan performa berdasarkan metrik yang ditentukan, menangani perbaikan bug, dan menyusun dokumentasi teknis yang lengkap. Selama di sana aku juga terlibat 2 kali framework version upgrade.
 
 ---
 
@@ -150,7 +150,7 @@ Performa & Pemeliharaan: Memantau dan mengoptimalkan performa berdasarkan metrik
 
 Ekosistem tooling menjadi bagian penting dari workflow:
 
-* Kolaborasi awalnya menggunakan Slack dan Google, lalu setelah akuisisi menggunakan Microsoft Teams dan Office.
+* Kolaborasi awalnya menggunakan Slack dan Google, lalu transisi menggunakan Microsoft Teams dan Office.
 * Jira untuk task management dan Confluence untuk knowledge management
 * GitLab dan GitHub untuk version control
 * CI/CD pipeline otomatis
@@ -207,11 +207,11 @@ Auth flow, middleware, job/queue, dan service container membuat sistem lebih tah
 
 ### Versioning dan Prioritization
 
-Tidak semua masalah harus diselesaikan sekarang. Stabilitas sering lebih penting daripada kesempurnaan.
+Tidak semua issue harus diselesaikan sekarang. Stabilitas sering lebih penting daripada kesempurnaan. Menerapkan semantic versioning.
 
 ### Development Cycle yang Realistis
 
-Pendekatan seperti di buku *Shape Up* membantu fokus pada outcome dibanding backlog tanpa ujung.
+Pendekatan siklus pengembangan dalam rentang 6 pekan seperti di buku *Shape Up* membantu fokus pada outcome dibanding backlog tanpa ujung.
 
 ### Dokumentasi Adalah Skill Engineering
 
@@ -223,12 +223,12 @@ Menulis technical dan planning documentation adalah bagian inti pekerjaan.
 
 Jika sebelumnya aku hanya fokus membuat fitur berjalan, sekarang aku lebih memikirkan:
 
-* bagaimana sistem tetap stabil saat organisasi berubah,
-* bagaimana tim tetap produktif meski struktur berganti,
+* bagaimana sistem tetap stabil meski terjadi perubahan,
+* bagaimana tim teknis bisa memberi input positif pada pengembangan produk,
 * bagaimana keputusan teknis bertahan dalam jangka panjang.
 
 Empat tahun ini mengajarkan bahwa karier engineering bukan garis lurus. Produk berubah, perusahaan berubah, tim berubah.
 
-Yang bertahan hanyalah kemampuan untuk belajar dan beradaptasi.
+Yang bertahan justru kemampuan untuk belajar dan beradaptasi.
 
 Proyek ini selesai untukku sekarang. Tetapi cara berpikir yang terbentuk selama perjalanan ini akan menjadi fondasi untuk semua pekerjaanku berikutnya.
