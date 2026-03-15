@@ -1,5 +1,5 @@
 ---
-title: 'If Something Feels Simple, You Probably Haven’t Seen the Details'
+title: 'If Something Too Feels Simple, You Probably Haven’t Seen the Details'
 pubDate: 2026-03-15
 description: ''
 heroImage: '/blog-placeholder-2.jpg'
