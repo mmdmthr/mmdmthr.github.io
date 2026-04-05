@@ -18,7 +18,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
 		<Header />
 		<main class="content-container py-8">
-			<article class="max-w-3xl mx-auto">
+			<article class="max-w-3xl mx-auto" data-pagefind-body>
 				<!-- Hero Image (if present) -->
 				{heroImage && (
 					<div class="mb-8">
@@ -43,12 +43,18 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						)}
 					</div>
 					
-					<h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 leading-tight mb-6">
+					<h1
+						class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 leading-tight mb-6"
+						data-pagefind-meta="title"
+					>
 						{title}
 					</h1>
 					
 					{description && (
-						<p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+						<p
+						  class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+						  data-pagefind-meta="description"
+						>
 							{description}
 						</p>
 					)}

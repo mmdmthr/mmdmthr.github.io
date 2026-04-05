@@ -3,37 +3,46 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { getCollection } from 'astro:content';
-import SearchBar from '../../components/SearchBar';
-
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+import Search from "astro-pagefind/components/Search";
 ---
 
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-	<head>
-		<BaseHead title={`Blog - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
-	</head>
-	<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
-		<Header />
-		<main class="content-container py-16">
-			<div class="max-w-4xl mx-auto">
-				<header class="text-center mb-12">
-					<h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-						Blog
-					</h1>
-					<p class="text-lg text-gray-600 dark:text-gray-400">
-						Notes on software development.
-					</p>
-				</header>
-				
-				<section>
-					<SearchBar client:load posts={posts} baseUrl="/blog" />
-				</section>
-			</div>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={`Blog - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+  </head>
+
+  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
+    <Header />
+
+    <main class="content-container py-16">
+      <div class="max-w-4xl mx-auto">
+
+        <!-- Header -->
+        <header class="text-center mb-12">
+          <h1 class="text-3xl sm:text-4xl font-bold mb-4">
+            Blog
+          </h1>
+          <p class="text-lg text-gray-600 dark:text-gray-400">
+            Notes on software development.
+          </p>
+        </header>
+
+        <!-- Search -->
+        <section class="max-w-3xl mx-auto">
+          <Search
+            id="search"
+            className="pagefind-ui"
+            uiOptions={{
+              showImages: false,
+              showSubResults: true,
+            }}
+          />
+        </section>
+
+      </div>
+    </main>
+
+    <Footer />
+  </body>
 </html>
