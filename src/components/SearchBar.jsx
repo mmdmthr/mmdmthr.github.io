@@ -1,22 +1,49 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import FormattedDate from './FormattedDate';
 
-export default function SearchBar({ posts, baseUrl = '/blog' }) {
+export default function SearchBar({ baseUrl = '/blog' }) {
   const [query, setQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  const [pagefind, setPagefind] = useState(null);
+  const searchTimeoutRef = useRef();
 
   useEffect(() => {
-    setSearchResults(posts);
-  }, [posts]);
+    const loadPagefind = async () => {
+      const dynamicImport = new Function('specifier', 'return import(specifier)');
+      const module = await dynamicImport('/pagefind/pagefind.js');
+      setPagefind(module);
+    };
+
+    loadPagefind();
+  }, []);
+
+  useEffect(() => {
+    if (!pagefind) return;
+
+    const loadAll = async () => {
+      const search = await pagefind.search(null);
+      const results = await Promise.all(search.results.map((r) => r.data()));
+      setSearchResults(results);
+    };
+
+    loadAll();
+  }, [pagefind]);
 
   const handleSearch = (e) => {
-    const searchTerm = e.target.value.toLowerCase();
+    const searchTerm = e.target.value;
     setQuery(searchTerm);
-    const results = posts.filter((post) => 
-      post.data.title.toLowerCase().includes(searchTerm) ||
-      post.data.description?.toLowerCase().includes(searchTerm)
-    );
-    setSearchResults(results);
+
+    clearTimeout(searchTimeoutRef.current);
+    searchTimeoutRef.current = window.setTimeout(async () => {
+      if (!pagefind) return;
+
+      const search = searchTerm.trim()
+        ? await pagefind.search(searchTerm)
+        : await pagefind.search(null);
+
+      const results = await Promise.all(search.results.map((r) => r.data()));
+      setSearchResults(results);
+    }, 250);
   };
 
   return (
@@ -46,25 +73,27 @@ export default function SearchBar({ posts, baseUrl = '/blog' }) {
 
       {/* Search Results */}
       <div className="space-y-6">
-        {searchResults.map((post) => (
-          <article key={post.id} className="group border-b border-gray-200 dark:border-gray-800 pb-6 last:border-b-0">
+        {searchResults.map((result) => (
+          <article key={result.url} className="group border-b border-gray-200 dark:border-gray-800 pb-6 last:border-b-0">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
               <h2 className="text-lg font-medium">
                 <a 
-                  href={`${baseUrl}/${post.id}/`}
+                  href={result.url}
                   className="text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 group-hover:text-primary-600 dark:group-hover:text-primary-400"
                 >
-                  {post.data.title}
+                  {result.meta.title}
                 </a>
               </h2>
-              <time className="text-sm text-gray-500 dark:text-gray-400 flex-shrink-0">
-                <FormattedDate date={post.data.pubDate} />
-              </time>
+              {result.meta?.pubDate && !Number.isNaN(new Date(result.meta.pubDate).valueOf()) && (
+                <time className="text-sm text-gray-500 dark:text-gray-400 flex-shrink-0">
+                  <FormattedDate date={result.meta.pubDate} />
+                </time>
+              )}
             </div>
             
-            {post.data.description && (
+            {(result.excerpt || result.meta.description) && (
               <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                {post.data.description}
+                {result.excerpt || result.meta.description}
               </p>
             )}
           </article>
