@@ -1,7 +1,7 @@
 ---
 title: 'Choosing the Right Web Framework: A Practical Guide'
 pubDate: 2025-06-01
-description: ''
+description: 'How to choose a web framework by evaluating learning curve, community, performance, and fit — without falling into analysis paralysis.'
 heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---

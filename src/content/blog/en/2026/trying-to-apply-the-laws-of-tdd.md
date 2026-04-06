@@ -1,7 +1,7 @@
 ---
 title: 'Trying to Apply the Laws of TDD'
 pubDate: 2026-02-18
-description: ''
+description: "After actually practicing TDD's three laws, I discovered benefits that reading about it never made obvious — including reduced cognitive load and guided momentum."
 heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
