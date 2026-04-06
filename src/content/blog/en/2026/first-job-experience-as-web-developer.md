@@ -2,7 +2,6 @@
 title: 'First Job Experience as a Web Developer'
 pubDate: 2026-01-10
 description: 'Reflecting on my first year as a web developer: owning projects solo in a three-person team and the lessons that still shape how I work today.'
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

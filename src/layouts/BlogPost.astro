@@ -8,7 +8,7 @@ import { SITE_TITLE } from '../consts';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
@@ -43,17 +43,6 @@ const jsonLd = {
 		<Header />
 		<main class="content-container py-8">
 			<article class="max-w-3xl mx-auto" data-pagefind-body>
-				<!-- Hero Image (if present) -->
-				{heroImage && (
-					<div class="mb-8">
-						<img
-							src={heroImage}
-							alt=""
-							class="w-full h-64 sm:h-80 object-cover rounded-xl shadow-lg"
-						/>
-					</div>
-				)}
-
 				<!-- Article Header -->
 				<header class="mb-8 text-center">
 					<div class="mb-4">

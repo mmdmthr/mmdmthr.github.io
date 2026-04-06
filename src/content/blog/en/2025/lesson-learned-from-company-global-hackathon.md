@@ -2,7 +2,6 @@
 title: "Lessons from a Global Hackathon: Building an AI for Certificate Extraction"
 pubDate: 2025-06-14
 description: 'Lessons from my first global hackathon: building an AI certificate extraction tool with AWS Lambda, S3, and Claude Sonnet 3.5 via Bedrock.'
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

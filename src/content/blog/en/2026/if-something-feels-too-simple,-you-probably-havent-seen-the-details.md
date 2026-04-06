@@ -2,7 +2,6 @@
 title: 'If Something Feels Too Simple, You Probably Haven’t Seen the Details'
 pubDate: 2026-03-15
 description: "Why systems that feel simple are usually just revealing their surface — a reflection on the gap between using an API and truly understanding the system."
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

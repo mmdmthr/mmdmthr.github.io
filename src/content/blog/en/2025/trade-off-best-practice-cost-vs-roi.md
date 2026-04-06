@@ -2,7 +2,6 @@
 title: "Why Most Internal Tools Fail (and How to Build One That Doesn’t)"
 pubDate: 2025-05-17
 description: "Lessons learned from building custom software for real operational problems"
-heroImage: '/blog-placeholder-2.jpg'
 tags: ["product", "internal tools", "software", "startups"]
 ---
 

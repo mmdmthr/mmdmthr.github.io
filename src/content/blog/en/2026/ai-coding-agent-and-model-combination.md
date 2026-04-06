@@ -2,7 +2,6 @@
 title: 'It’s Not Just the Model. It’s the Combination'
 pubDate: 2026-02-25
 description: "Comparing AI coding tools isn't just about the model — the agent matters too. My experience testing Copilot, Claude, and Zed with different model backends."
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

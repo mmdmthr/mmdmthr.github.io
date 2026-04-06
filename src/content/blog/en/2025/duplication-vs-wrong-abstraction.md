@@ -2,7 +2,6 @@
 title: 'Duplication vs Wrong Abstraction'
 pubDate: 2025-09-29
 description: 'Why duplicating code is often safer than premature abstraction, and how to discover the right abstractions as real patterns emerge over time.'
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

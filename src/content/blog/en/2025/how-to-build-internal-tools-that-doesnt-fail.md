@@ -2,7 +2,6 @@
 title: "Trade-off: Best Practice Cost vs ROI"
 pubDate: 2025-05-06
 description: "Lessons learned about how and when we need best practice"
-heroImage: '/blog-placeholder-2.jpg'
 tags: ["product", "software", "startups", "business"]
 ---
 
