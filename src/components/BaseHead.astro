@@ -2,17 +2,19 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
-import { SITE_TITLE, GA_MEASUREMENT_ID } from '../consts';
+import { SITE_TITLE } from '../consts';
 
 interface Props {
 	title: string;
 	description: string;
-	image?: string;
+	ogType?: 'website' | 'article';
+	pubDate?: Date;
+	updatedDate?: Date;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
-const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
+const { title, description, ogType = 'website', pubDate, updatedDate } = Astro.props;
+const ogImage = new URL('/blog-placeholder-1.jpg', Astro.site);
 ---
 
 <!-- Global Metadata -->
@@ -20,7 +22,7 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="google-site-verification" content="lszFGUTWXJkJeBg2kaIvPMx225zYYrHpjv38Xxd9bck" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="sitemap" href="/sitemap.xml" />
 <link
 	rel="alternate"
 	type="application/rss+xml"
@@ -42,18 +44,25 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content={Astro.url} />
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:locale" content="en_US" />
+{ogType === 'article' && pubDate && (
+	<meta property="article:published_time" content={pubDate.toISOString()} />
+)}
+{ogType === 'article' && updatedDate && (
+	<meta property="article:modified_time" content={updatedDate.toISOString()} />
+)}
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:image" content={ogImage} />
 
 <!-- GoatCounter Analytics -->
 <script data-goatcounter="https://mmdmthr.goatcounter.com/count"
