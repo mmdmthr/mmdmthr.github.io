@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mmdmthr.github.io/</loc>
   </url>
@@ -8,6 +9,45 @@
   </url>
   <url>
     <loc>https://mmdmthr.github.io/about/</loc>
+  </url>
+  <url>
+    <loc>https://mmdmthr.github.io/gallery/</loc>
+    <image:image>
+      <image:loc>https://mmdmthr.github.io/gallery/bandara-YIA.20240823.1545x870.jpeg</image:loc>
+      <image:title>Bandara YIA</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mmdmthr.github.io/gallery/camping-waduk-sermo.20240623.2000x1125.jpeg</image:loc>
+      <image:title>Camping Waduk Sermo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mmdmthr.github.io/gallery/masjid-al-falah-batulicin.20211017.1398x2280.jpeg</image:loc>
+      <image:title>Masjid Al Falah Batulicin</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mmdmthr.github.io/gallery/masjid-al-falah-batulicin.20211017.2679x1447.jpeg</image:loc>
+      <image:title>Masjid Al Falah Batulicin</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mmdmthr.github.io/gallery/merbabu-pos-4.20240728.1727x971.jpeg</image:loc>
+      <image:title>Merbabu Pos 4</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mmdmthr.github.io/gallery/plunyon-kalikuning.20250201.1277x1120.jpeg</image:loc>
+      <image:title>Plunyon Kalikuning</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mmdmthr.github.io/gallery/prambanan-green-footprint.20240928.1326x1050.jpeg</image:loc>
+      <image:title>Prambanan Green Footprint</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mmdmthr.github.io/gallery/speed-boat-kampung-baru.20240823.4000x2250.jpeg</image:loc>
+      <image:title>Speed Boat Kampung Baru</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mmdmthr.github.io/gallery/tlogo-putri-kaliurang.20240505.1500x1125.jpeg</image:loc>
+      <image:title>Tlogo Putri Kaliurang</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://mmdmthr.github.io/blog/2025/choosing-the-right-web-framework/</loc>

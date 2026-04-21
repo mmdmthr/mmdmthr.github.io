@@ -1,0 +1,38 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#18181b"/>
+
+  <!-- Accent bar top -->
+  <rect width="1200" height="6" fill="#0284c7"/>
+
+  <!-- Site title -->
+  <text
+    x="100"
+    y="280"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="80"
+    font-weight="700"
+    fill="#f4f4f5"
+    letter-spacing="-1"
+  >Dev Jurnal</text>
+
+  <!-- Tagline -->
+  <text
+    x="100"
+    y="360"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="32"
+    font-weight="400"
+    fill="#a1a1aa"
+  >Notes on software development, tech, and work.</text>
+
+  <!-- Domain -->
+  <text
+    x="100"
+    y="540"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="24"
+    font-weight="400"
+    fill="#0284c7"
+  >mmdmthr.github.io</text>
+</svg>
