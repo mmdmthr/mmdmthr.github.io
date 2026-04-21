@@ -1,7 +1,7 @@
 ---
 title: 'How I Use Upwork Jobs as My Learning Roadmap'
 pubDate: 2026-04-19
-description: 'I treat Upwork jobs as my curriculum—here’s how.'
+description: ‘Instead of chasing tutorials, I browse Upwork job posts to discover what skills the market actually wants — then learn those. Here is how I use job listings as a practical, demand-driven learning curriculum.’
 tags: 'notes'
 ---
 

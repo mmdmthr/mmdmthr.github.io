@@ -1,0 +1,28 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<BaseHead title={`Page Not Found — ${SITE_TITLE}`} description="The page you're looking for doesn't exist." />
+	</head>
+	<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
+		<Header />
+		<main class="content-container py-16">
+			<div class="max-w-3xl mx-auto text-center">
+				<h1 class="text-6xl font-bold text-primary-600 dark:text-primary-400 mb-4">404</h1>
+				<p class="text-xl text-gray-700 dark:text-gray-300 mb-8">Page not found.</p>
+				<div class="flex justify-center gap-4">
+					<a href="/" class="text-primary-600 dark:text-primary-400 hover:underline font-medium">Home</a>
+					<a href="/blog" class="text-primary-600 dark:text-primary-400 hover:underline font-medium">Blog</a>
+					<a href="/about" class="text-primary-600 dark:text-primary-400 hover:underline font-medium">About</a>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

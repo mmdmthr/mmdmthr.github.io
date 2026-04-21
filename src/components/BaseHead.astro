@@ -57,6 +57,9 @@ const ogImage = new URL('/og-default.svg', Astro.site);
 {ogType === 'article' && updatedDate && (
 	<meta property="article:modified_time" content={updatedDate.toISOString()} />
 )}
+{ogType === 'article' && (
+	<meta property="article:author" content="Hari" />
+)}
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary" />
