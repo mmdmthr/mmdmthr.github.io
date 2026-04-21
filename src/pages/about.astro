@@ -1,17 +1,17 @@
 ---
-import BaseHead from ‘../components/BaseHead.astro’;
-import Header from ‘../components/Header.astro’;
-import Footer from ‘../components/Footer.astro’;
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 const jsonLd = {
-	‘@context’: ‘https://schema.org’,
-	‘@type’: ‘AboutPage’,
-	name: ‘About Hari’,
-	url: ‘https://mmdmthr.github.io/about/’,
+	'@context': 'https://schema.org',
+	'@type': 'AboutPage',
+	name: 'About Hari',
+	url: 'https://mmdmthr.github.io/about/',
 	author: {
-		‘@type’: ‘Person’,
-		name: ‘Hari’,
-		url: ‘https://mmdmthr.github.io/’,
+		'@type': 'Person',
+		name: 'Hari',
+		url: 'https://mmdmthr.github.io/',
 	},
 };
 ---
@@ -21,7 +21,7 @@ const jsonLd = {
 	<head>
 		<BaseHead
 			title="About Me"
-			description="I’m Hari, a software developer who builds tools that help people work better. I write about software development, tech, and work on my blog."
+			description="I'm Hari, a software developer who builds tools that help people work better. I write about software development, tech, and work on my blog."
 		/>
 		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 	</head>
@@ -38,25 +38,25 @@ const jsonLd = {
 
 				<div class="prose-vitesse">
 					<p>
-						Hi, I’m Hari — a developer with a practical mindset, a love for learning, and a strong belief in building software that works for real people and solve real problems.
-						I’ve worked on internal systems (dashboards, tools, and APIs).
-						I’ve worked across professional teams, freelance projects, and small business initiatives.
+						Hi, I'm Hari — a developer with a practical mindset, a love for learning, and a strong belief in building software that works for real people and solve real problems.
+						I've worked on internal systems (dashboards, tools, and APIs).
+						I've worked across professional teams, freelance projects, and small business initiatives.
 						I believe the best software is the one people actually want to use — fast, simple, and built with empathy.
 					</p>
 
 					<h2>Professional Experience</h2>
 					<p>
-						I’ve been part of teams that built full-stack MVPs, including a job portal and an accounting platform.
-						I’ve worked as a backend developer for a property tech platform, helping scale systems and improve reliability.
-						I’ve also worked closely with non-technical teams to understand what they truly need, and translate that into software that supports their work — not slows them down.
+						I've been part of teams that built full-stack MVPs, including a job portal and an accounting platform.
+						I've worked as a backend developer for a property tech platform, helping scale systems and improve reliability.
+						I've also worked closely with non-technical teams to understand what they truly need, and translate that into software that supports their work — not slows them down.
 						My development work spans both frontend and backend, with a focus on JavaScript and PHP.
 					</p>
 
 					<h2>What Drives Me</h2>
 					<p>
-						I’m a curious problem-solver. I’m not afraid to dive into something I don’t yet know, and I care about doing things properly — sometimes too much.
-						I’m learning to balance best practices with delivering fast, usable results.
-						People don’t always need the perfect app, but they do need something that works and grows with them.
+						I'm a curious problem-solver. I'm not afraid to dive into something I don't yet know, and I care about doing things properly — sometimes too much.
+						I'm learning to balance best practices with delivering fast, usable results.
+						People don't always need the perfect app, but they do need something that works and grows with them.
 					</p>
 
 					<h2>Writing</h2>
@@ -65,7 +65,7 @@ const jsonLd = {
 					</p>
 
 					<p>
-						If you’re looking for someone to help build tools for your team — or just want to chat about lean development, automation, or ideas — feel free to <a href="mailto:muhhari@gmail.com">reach out</a>.
+						If you're looking for someone to help build tools for your team — or just want to chat about lean development, automation, or ideas — feel free to <a href="mailto:muhhari@gmail.com">reach out</a>.
 					</p>
 
 					<p>
