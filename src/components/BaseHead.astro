@@ -14,7 +14,7 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const { title, description, ogType = 'website', pubDate, updatedDate } = Astro.props;
-const ogImage = new URL('/blog-placeholder-1.jpg', Astro.site);
+const ogImage = new URL('/og-default.svg', Astro.site);
 ---
 
 <!-- Global Metadata -->
@@ -58,7 +58,7 @@ const ogImage = new URL('/blog-placeholder-1.jpg', Astro.site);
 )}
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:card" content="summary" />
 <meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
