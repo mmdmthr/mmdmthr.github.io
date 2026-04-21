@@ -8,12 +8,26 @@ import Search from "astro-pagefind/components/Search";
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("blog");
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: `Blog - ${SITE_TITLE}`,
+  description: SITE_DESCRIPTION,
+  url: 'https://mmdmthr.github.io/blog/',
+  author: {
+    '@type': 'Person',
+    name: 'Hari',
+    url: 'https://mmdmthr.github.io/',
+  },
+};
 ---
 
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <BaseHead title={`Blog - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
 
   <body

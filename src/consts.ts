@@ -3,4 +3,3 @@
 
 export const SITE_TITLE = 'Dev Jurnal';
 export const SITE_DESCRIPTION = 'A developer blog on software development, engineering practices, and lessons learned from building real software.';
-export const GA_MEASUREMENT_ID = "G-GVQKMM834T";
