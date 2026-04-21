@@ -14,6 +14,7 @@ const SimpleGallery = ({ photos }) => {
       <MasonryPhotoAlbum
         photos={photos}
         onClick={({ index: current }) => setIndex(current)}
+        componentsProps={{ img: { loading: 'lazy' } }}
       />
 
       <Lightbox
