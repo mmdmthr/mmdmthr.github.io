@@ -2,7 +2,6 @@
 title: 'Maintainable Code'
 pubDate: 2024-10-19
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: 'Meningkatkan Kesadaran Keamanan Programer'
 pubDate: 2023-09-02
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: JavaScript Truthy dan Falsy
 pubDate: 2021-07-22
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'javascript'
 ---
 

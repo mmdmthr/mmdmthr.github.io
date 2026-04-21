@@ -2,7 +2,6 @@
 title: Mengenal RFC 5424 - Panduan untuk Facility dan Severity dalam Syslog
 pubDate: 2023-05-27
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

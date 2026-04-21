@@ -2,7 +2,6 @@
 title: 'Memahami Masalah N + 1 dalam ORM'
 pubDate: 2023-09-27
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'optimization'
 ---
 

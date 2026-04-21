@@ -2,7 +2,6 @@
 title: 'Membaca Flame Graph'
 pubDate: 2023-10-02
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

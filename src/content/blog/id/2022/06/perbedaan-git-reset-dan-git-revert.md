@@ -2,7 +2,6 @@
 title: Perbedaan Git Reset dan Git Revert
 pubDate: 2022-06-26
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'git'
 ---
 

@@ -2,7 +2,6 @@
 title: 'Text Resources'
 pubDate: 2024-12-07
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

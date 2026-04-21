@@ -2,7 +2,6 @@
 title: 'Kursus Menulis Teknis Google - Bagian Dua'
 pubDate: 2024-03-02
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

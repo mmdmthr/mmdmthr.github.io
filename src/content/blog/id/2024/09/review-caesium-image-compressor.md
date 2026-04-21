@@ -2,7 +2,6 @@
 title: 'Review Caesium Image Compressor'
 pubDate: 2024-09-11
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: Laravel Routing
 pubDate: 2021-07-26
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'laravel'
 ---
 

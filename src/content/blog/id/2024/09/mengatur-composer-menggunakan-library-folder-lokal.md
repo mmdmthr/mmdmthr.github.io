@@ -2,7 +2,6 @@
 title: 'Mengatur Composer untuk Menggunakan Library di Folder Lokal'
 pubDate: 2024-09-29
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

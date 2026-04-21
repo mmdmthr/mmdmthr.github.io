@@ -2,7 +2,6 @@
 title: Kompromi dalam Pengembangan Perangkat Lunak
 pubDate: 2023-05-13
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

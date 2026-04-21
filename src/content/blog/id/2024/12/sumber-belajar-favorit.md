@@ -2,7 +2,6 @@
 title: 'Sumber Belajar Favorit: Memaksimalkan Waktu dan Informasi'
 pubDate: 2024-12-28
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

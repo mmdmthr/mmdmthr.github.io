@@ -2,7 +2,6 @@
 title: 'Dimensi Kualitas Perangkat Lunak'
 pubDate: 2025-01-13
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

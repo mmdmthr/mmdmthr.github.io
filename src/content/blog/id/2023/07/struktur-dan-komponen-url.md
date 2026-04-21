@@ -2,7 +2,6 @@
 title: 'Struktur URL: Memahami Komponen-Komponennya'
 pubDate: 2023-07-13
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

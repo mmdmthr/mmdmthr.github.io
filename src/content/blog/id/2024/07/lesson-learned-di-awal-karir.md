@@ -2,7 +2,6 @@
 title: 'Lesson Learned di Awal Karir'
 pubDate: 2024-07-20
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

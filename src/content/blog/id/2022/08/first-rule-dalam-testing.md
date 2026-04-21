@@ -2,7 +2,6 @@
 title: Aturan FIRST dalam Clean Test
 pubDate: 2022-08-01
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'testing'
 ---
 

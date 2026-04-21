@@ -2,7 +2,6 @@
 title: 'Perbaikan Berkelanjutan dengan Sprint Retrospective'
 pubDate: 2023-08-19
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

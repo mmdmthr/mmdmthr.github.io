@@ -2,7 +2,6 @@
 title: 'Sisi Lain dari Small Functions'
 pubDate: 2025-03-08
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

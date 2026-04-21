@@ -2,7 +2,6 @@
 title: 'Cara Belajar Lebih Baik dan Lebih Cepat sebagai Programmer'
 pubDate: 2023-08-16
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

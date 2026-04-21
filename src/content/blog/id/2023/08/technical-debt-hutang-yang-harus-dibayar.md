@@ -2,7 +2,6 @@
 title: 'Technical Debt, Hutang Teknis yang Harus Dibayar'
 pubDate: 2023-08-08
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: Mengoptimalkan Query Database di Laravel
 pubDate: 2023-01-28
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'laravel'
 ---
 

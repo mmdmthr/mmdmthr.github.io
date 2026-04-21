@@ -2,7 +2,6 @@
 title: Professional Lessons from Michael Janda
 pubDate: 2023-01-01
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

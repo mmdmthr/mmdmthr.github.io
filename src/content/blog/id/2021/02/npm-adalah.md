@@ -2,7 +2,6 @@
 title: NPM Adalah
 pubDate: 2021-02-20
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

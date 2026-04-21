@@ -2,7 +2,6 @@
 title: Membuat Website JAMStack
 pubDate: 2021-03-06
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'how to'
 ---
 

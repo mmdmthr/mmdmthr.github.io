@@ -2,7 +2,6 @@
 title: Menyingkat Perintah Git dengan Alias
 pubDate: 2022-08-07
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'git'
 ---
 

@@ -2,7 +2,6 @@
 title: Update Versi Go di Ubuntu
 pubDate: 2022-09-04
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

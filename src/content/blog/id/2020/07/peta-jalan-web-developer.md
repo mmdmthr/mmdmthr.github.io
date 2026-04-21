@@ -2,7 +2,6 @@
 title: Peta Jalan Web Developer
 pubDate: 2020-07-15
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

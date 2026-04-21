@@ -2,7 +2,6 @@
 title: 'Review Coding Bootcamp Online Gratis FreeCodeCamp'
 pubDate: 2023-09-13
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

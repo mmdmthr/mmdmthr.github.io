@@ -2,7 +2,6 @@
 title: Auto Build dan Deploy Gatsby Site ke GitHub Page dengan GitHub Action
 pubDate: 2023-06-03
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

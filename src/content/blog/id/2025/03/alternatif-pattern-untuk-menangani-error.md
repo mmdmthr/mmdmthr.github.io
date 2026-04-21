@@ -2,7 +2,6 @@
 title: 'Alternatif Pattern untuk Menangani Error'
 pubDate: 2025-03-22
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

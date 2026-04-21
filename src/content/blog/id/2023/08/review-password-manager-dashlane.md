@@ -2,7 +2,6 @@
 title: 'Review Password Manager - Dashlane'
 pubDate: 2023-08-23
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

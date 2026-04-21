@@ -2,7 +2,6 @@
 title: Buku Pemrograman Gratis - Seri Catatan untuk Profesional
 pubDate: 2021-08-14
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

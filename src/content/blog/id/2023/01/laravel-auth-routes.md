@@ -2,7 +2,6 @@
 title: Laravel Auth Routes
 pubDate: 2023-01-03
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'laravel'
 ---
 

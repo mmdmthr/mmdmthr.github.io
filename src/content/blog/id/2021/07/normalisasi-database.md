@@ -2,7 +2,6 @@
 title: Normalisasi Database
 pubDate: 2021-07-25
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'database'
 ---
 

@@ -2,7 +2,6 @@
 title: 'Memahami Burnout dan Cara Mengelolanya untuk Kesehatan Mental'
 pubDate: 2023-08-02
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

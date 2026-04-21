@@ -2,7 +2,6 @@
 title: Contoh API Contract
 pubDate: 2022-08-01
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: 'Panduan Teknis Mengirim Email untuk Developer'
 pubDate: 2024-05-17
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: 'Komunikasi Online Efektif dan Efisien'
 pubDate: 2024-03-16
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

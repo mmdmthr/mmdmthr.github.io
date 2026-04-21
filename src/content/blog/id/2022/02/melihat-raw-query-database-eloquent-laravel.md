@@ -2,7 +2,6 @@
 title: Melihat Raw Query Database Eloquent Laravel
 pubDate: 2022-02-25
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'laravel'
 ---
 

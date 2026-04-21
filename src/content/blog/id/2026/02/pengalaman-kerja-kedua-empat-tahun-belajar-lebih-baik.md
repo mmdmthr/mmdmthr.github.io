@@ -2,7 +2,6 @@
 title: 'Pengalman Kerja Kedua - Empat Tahun Belajar Lebih Baik'
 pubDate: 2026-02-27
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: Menulis Acceptance Test dengan Formula Given-When-Then
 pubDate: 2023-05-20
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'testing'
 ---
 

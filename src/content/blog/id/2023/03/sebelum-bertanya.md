@@ -2,7 +2,6 @@
 title: Tips Sebelum Bertanya
 pubDate: 2023-03-05
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

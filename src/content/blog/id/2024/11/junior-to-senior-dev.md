@@ -2,7 +2,6 @@
 title: 'Dari Junior menjadi Senior Developer'
 pubDate: 2024-11-16
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

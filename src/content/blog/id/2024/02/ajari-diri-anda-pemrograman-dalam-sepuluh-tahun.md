@@ -2,7 +2,6 @@
 title: 'Ajari Diri Anda Pemrograman dalam Sepuluh Tahun'
 pubDate: 2024-02-15
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

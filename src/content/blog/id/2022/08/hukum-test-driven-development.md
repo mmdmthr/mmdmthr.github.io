@@ -2,7 +2,6 @@
 title: Tiga Hukum Test Driven Development
 pubDate: 2022-08-17
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'testing'
 ---
 

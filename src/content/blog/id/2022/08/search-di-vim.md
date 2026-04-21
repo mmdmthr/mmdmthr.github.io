@@ -2,7 +2,6 @@
 title: Search di Vim
 pubDate: 2022-08-02
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

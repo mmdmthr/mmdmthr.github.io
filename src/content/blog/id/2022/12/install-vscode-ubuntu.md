@@ -2,7 +2,6 @@
 title: Install VS Code di Ubuntu
 pubDate: 2022-12-15
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

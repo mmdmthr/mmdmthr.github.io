@@ -2,7 +2,6 @@
 title: 'Memahami Law of Demeter'
 pubDate: 2024-11-23
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

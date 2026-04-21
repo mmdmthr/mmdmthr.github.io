@@ -2,7 +2,6 @@
 title: 'Apa Itu .env File?'
 pubDate: 2024-02-08
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

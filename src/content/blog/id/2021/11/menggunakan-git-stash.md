@@ -2,7 +2,6 @@
 title: Menggunakan Git Stash
 pubDate: 2021-11-18
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'git'
 ---
 

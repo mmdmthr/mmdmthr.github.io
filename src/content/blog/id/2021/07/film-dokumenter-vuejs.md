@@ -2,7 +2,6 @@
 title: Film Dokumenter Sejarah Vue JS
 pubDate: 2021-07-10
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

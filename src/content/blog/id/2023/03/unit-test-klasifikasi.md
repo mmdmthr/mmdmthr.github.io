@@ -2,7 +2,6 @@
 title: Unit Test - Klasifikasi
 pubDate: 2023-03-25
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'testing'
 ---
 

@@ -2,7 +2,6 @@
 title: 'Quotes from Coding Guru'
 pubDate: 2024-05-23
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

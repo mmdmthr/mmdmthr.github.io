@@ -2,7 +2,6 @@
 title: Perbedaan const dan let
 pubDate: 2021-07-24
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'javascript'
 ---
 

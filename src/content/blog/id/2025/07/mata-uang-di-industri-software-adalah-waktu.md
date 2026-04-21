@@ -2,7 +2,6 @@
 title: 'Mata Uang di Industri Software adalah Waktu'
 pubDate: 2025-07-01
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

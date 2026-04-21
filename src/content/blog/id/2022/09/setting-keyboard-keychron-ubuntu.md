@@ -2,7 +2,6 @@
 title: Setting Keyboard Keychron K2 di Ubuntu
 pubDate: 2022-09-12
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

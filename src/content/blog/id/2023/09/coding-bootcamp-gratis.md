@@ -2,7 +2,6 @@
 title: 'Coding Bootcamp Online Gratis'
 pubDate: 2023-09-06
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

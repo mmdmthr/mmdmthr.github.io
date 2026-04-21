@@ -2,7 +2,6 @@
 title: Tips Routing Laravel - Bagian 1
 pubDate: 2023-02-18
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'laravel'
 ---
 

@@ -2,7 +2,6 @@
 title: 'Projek Gunung Nusantara'
 pubDate: 2024-03-11
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

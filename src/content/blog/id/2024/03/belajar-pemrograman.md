@@ -2,7 +2,6 @@
 title: 'Belajar Pemrograman'
 pubDate: 2024-03-24
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: PHP Truthy dan Falsy Value
 pubDate: 2022-07-24
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'php'
 ---
 

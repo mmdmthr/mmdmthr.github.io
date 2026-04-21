@@ -2,7 +2,6 @@
 title: Property dan Method Public, Private, Protected
 pubDate: 2021-08-08
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'php'
 ---
 

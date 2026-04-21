@@ -2,7 +2,6 @@
 title: 'Belajar dengan Membuat'
 pubDate: 2025-02-08
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

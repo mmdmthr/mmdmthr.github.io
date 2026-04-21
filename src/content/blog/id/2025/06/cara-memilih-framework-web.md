@@ -2,7 +2,6 @@
 title: 'Memilih Web Framework yang Tepat: Panduan untuk Pemula dan Profesional'
 pubDate: 2025-06-01
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: 'Bagaimana ChatGPT Membantu Saya dalam Kehidupan Sehari-hari'
 pubDate: 2024-06-01
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

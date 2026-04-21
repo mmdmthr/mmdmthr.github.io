@@ -2,7 +2,6 @@
 title: 'Duplikasi vs Abstraksi yang Keliru'
 pubDate: 2025-09-29
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

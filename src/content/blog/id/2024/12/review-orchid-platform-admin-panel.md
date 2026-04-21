@@ -2,7 +2,6 @@
 title: 'Review Orchid Platform Admin Panel'
 pubDate: 2024-12-22
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

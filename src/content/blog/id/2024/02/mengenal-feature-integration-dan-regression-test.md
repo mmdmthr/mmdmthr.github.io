@@ -2,7 +2,6 @@
 title: 'Mengenal Feature Test, Integration Test, dan Regression Test'
 pubDate: 2024-02-12
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

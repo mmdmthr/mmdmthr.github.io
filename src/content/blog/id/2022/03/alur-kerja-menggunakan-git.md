@@ -2,7 +2,6 @@
 title: Alur Kerja Menggunakan Git
 pubDate: 2022-05-16
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'git'
 ---
 

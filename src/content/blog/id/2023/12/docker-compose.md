@@ -2,7 +2,6 @@
 title: 'Apa itu Docker Compose?'
 pubDate: 2023-12-10
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

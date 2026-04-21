@@ -2,7 +2,6 @@
 title: 'Trade-off: Best Practice Cost vs ROI'
 pubDate: 2025-05-17
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

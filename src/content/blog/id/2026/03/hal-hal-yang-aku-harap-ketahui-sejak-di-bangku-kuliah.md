@@ -2,7 +2,6 @@
 title: 'Hal-hal yang Aku Harap Ketahui Sejak di Bangku Kuliah'
 pubDate: 2026-03-08
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

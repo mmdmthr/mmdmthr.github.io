@@ -2,7 +2,6 @@
 title: Apa Itu OAuth2 part 2 - Aplikasi Web Server
 pubDate: 2023-05-06
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

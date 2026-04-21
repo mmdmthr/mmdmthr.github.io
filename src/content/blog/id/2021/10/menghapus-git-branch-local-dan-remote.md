@@ -2,7 +2,6 @@
 title: Menghapus Git Branch Local dan Remote
 pubDate: 2021-10-18
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'git'
 ---
 

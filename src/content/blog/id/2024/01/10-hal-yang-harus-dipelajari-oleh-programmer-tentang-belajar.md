@@ -2,7 +2,6 @@
 title: '10 Hal yang Harus Dipelajari oleh Programmer tentang "Belajar"'
 pubDate: 2024-01-22
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

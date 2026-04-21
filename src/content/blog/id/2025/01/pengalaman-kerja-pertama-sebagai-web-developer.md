@@ -2,7 +2,6 @@
 title: 'Pengalaman Kerja Pertama Sebagai Web Developer'
 pubDate: 2025-01-05
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

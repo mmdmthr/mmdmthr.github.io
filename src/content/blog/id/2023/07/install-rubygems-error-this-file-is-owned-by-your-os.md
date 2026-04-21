@@ -2,7 +2,6 @@
 title: 'Install Rubygems Error: This file is owned by your OS, not by rubygems upstream'
 pubDate: 2023-07-01
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

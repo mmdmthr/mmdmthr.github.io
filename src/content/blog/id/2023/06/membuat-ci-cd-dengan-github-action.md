@@ -2,7 +2,6 @@
 title: Panduan Membuat CI/CD dengan GitHub Action
 pubDate: 2023-06-23
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

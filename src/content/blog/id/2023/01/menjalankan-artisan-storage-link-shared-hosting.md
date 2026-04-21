@@ -2,7 +2,6 @@
 title: Menjalankan Perintah PHP Artisan Storage Link di Shared Hosting
 pubDate: 2023-01-21
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'laravel'
 ---
 

@@ -2,7 +2,6 @@
 title: Membuat Bootable Flashdisk Windows di Ubuntu dengan Ventoy
 pubDate: 2023-02-05
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

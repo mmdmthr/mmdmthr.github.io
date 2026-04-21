@@ -2,7 +2,6 @@
 title: JAMStack Adalah
 pubDate: 2021-02-16T07:26:03.284Z
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

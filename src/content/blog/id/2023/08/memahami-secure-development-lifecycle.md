@@ -2,7 +2,6 @@
 title: 'Memahami Secure Development Lifecycle (SDLC)'
 pubDate: 2023-08-30
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

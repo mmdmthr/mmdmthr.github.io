@@ -2,7 +2,6 @@
 title: 'Stuck di Karir'
 pubDate: 2023-10-07
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

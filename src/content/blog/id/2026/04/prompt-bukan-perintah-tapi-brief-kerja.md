@@ -2,7 +2,6 @@
 title: 'Prompt Bukan Perintah, Tapi Brief Kerja'
 pubDate: 2026-04-03
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: Cara Berkomunikasi dalam Tim
 pubDate: 2022-07-15
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

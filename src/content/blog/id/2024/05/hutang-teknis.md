@@ -2,7 +2,6 @@
 title: 'Hutang Teknis (Technical Debt)'
 pubDate: 2024-05-05
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

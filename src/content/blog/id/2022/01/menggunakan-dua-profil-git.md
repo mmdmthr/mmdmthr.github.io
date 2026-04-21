@@ -2,7 +2,6 @@
 title: Menggunakan Dua Profil Git 
 pubDate: 2022-01-18
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'git'
 ---
 

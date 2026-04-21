@@ -2,7 +2,6 @@
 title: 'Mengenal Tiket Jira: Epic, Story, Bug, Task, dan Subtask dalam Manajemen Proyek'
 pubDate: 2023-06-08
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

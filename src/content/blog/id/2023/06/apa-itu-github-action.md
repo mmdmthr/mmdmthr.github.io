@@ -2,7 +2,6 @@
 title: Apa itu GitHub Action?
 pubDate: 2023-06-17
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

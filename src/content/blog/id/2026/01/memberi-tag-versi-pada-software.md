@@ -2,7 +2,6 @@
 title: 'Belajar Memberi Versi pada Software'
 pubDate: 2026-01-26
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

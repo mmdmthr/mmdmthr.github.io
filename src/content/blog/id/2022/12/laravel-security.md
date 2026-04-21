@@ -2,7 +2,6 @@
 title: Laravel Security
 pubDate: 2022-12-26
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'laravel'
 ---
 

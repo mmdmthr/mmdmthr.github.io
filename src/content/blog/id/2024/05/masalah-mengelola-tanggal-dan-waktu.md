@@ -2,7 +2,6 @@
 title: 'Masalah Mengelola Tanggal dan Waktu'
 pubDate: 2024-05-11
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

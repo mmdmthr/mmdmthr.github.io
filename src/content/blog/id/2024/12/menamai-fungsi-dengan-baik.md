@@ -2,7 +2,6 @@
 title: 'Menamai Fungsi dengan Baik'
 pubDate: 2024-12-14
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

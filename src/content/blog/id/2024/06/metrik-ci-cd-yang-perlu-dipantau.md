@@ -2,7 +2,6 @@
 title: '5 Metriks CI/CD yang Perlu Dipantau'
 pubDate: 2024-06-14
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

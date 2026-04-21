@@ -2,7 +2,6 @@
 title: 'Belajar tentang Exception'
 pubDate: 2025-02-22
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

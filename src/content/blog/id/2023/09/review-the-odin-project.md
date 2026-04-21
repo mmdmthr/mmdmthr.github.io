@@ -2,7 +2,6 @@
 title: 'Review Coding Bootcamp Online Gratis The Odin Project'
 pubDate: 2023-09-16
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: 'Make It Work, Make It Right, Make It Fast'
 pubDate: 2025-01-18
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

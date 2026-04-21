@@ -2,7 +2,6 @@
 title: Visi Elon Musk
 pubDate: 2021-03-13
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

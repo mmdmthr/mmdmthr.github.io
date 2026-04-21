@@ -2,7 +2,6 @@
 title: Cara Menggunakan Markdown Dasar
 pubDate: 2021-02-07T07:26:03.284Z
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'how to'
 ---
 

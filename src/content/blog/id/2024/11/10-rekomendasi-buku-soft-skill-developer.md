@@ -2,7 +2,6 @@
 title: '10 Rekomendasi Buku untuk Meningkatkan Soft Skill Developer'
 pubDate: 2024-11-03
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: 'Contoh Tech Debt'
 pubDate: 2024-06-07
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

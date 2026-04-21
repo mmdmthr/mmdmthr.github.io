@@ -2,7 +2,6 @@
 title: 'Menghadapi Serbuan Bot di Server — Peristiwa Tak Terduga Saat Mendaki'
 pubDate: 2026-01-31
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

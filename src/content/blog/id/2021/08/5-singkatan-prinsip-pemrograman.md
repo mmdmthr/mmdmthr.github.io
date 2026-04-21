@@ -2,7 +2,6 @@
 title: 5 Singkatan Prinsip Pemrograman
 pubDate: 2021-08-28
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

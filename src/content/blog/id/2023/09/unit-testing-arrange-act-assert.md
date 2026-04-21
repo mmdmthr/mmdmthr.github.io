@@ -2,7 +2,6 @@
 title: 'Unit Testing dengan Pendekatan Arrange, Act, dan Assert'
 pubDate: 2023-09-20
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'testing'
 ---
 

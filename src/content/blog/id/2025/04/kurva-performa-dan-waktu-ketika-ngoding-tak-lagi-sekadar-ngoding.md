@@ -2,7 +2,6 @@
 title: 'Kurva Performa dan Waktu: Ketika Ngoding Tak Lagi Sekadar Ngoding'
 pubDate: 2025-04-05
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

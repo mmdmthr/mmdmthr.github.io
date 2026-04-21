@@ -2,7 +2,6 @@
 title: 'Metriks Kerumitan Kode'
 pubDate: 2025-07-12
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

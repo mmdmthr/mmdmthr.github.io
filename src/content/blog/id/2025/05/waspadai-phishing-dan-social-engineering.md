@@ -2,7 +2,6 @@
 title: 'Ancaman Keamanan Tak Selalu Teknis: Waspadai Phishing dan Social Engineering'
 pubDate: 2025-05-03
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: Mengirim Email Menggunakan Mailgun pada Laravel
 pubDate: 2021-09-18
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'laravel'
 ---
 

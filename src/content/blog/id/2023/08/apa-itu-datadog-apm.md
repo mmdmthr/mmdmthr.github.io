@@ -2,7 +2,6 @@
 title: 'Mengoptimalkan Kinerja Aplikasi dengan DataDog APM'
 pubDate: 2023-08-05
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

@@ -2,7 +2,6 @@
 title: Tips Debugging
 pubDate: 2023-04-08
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

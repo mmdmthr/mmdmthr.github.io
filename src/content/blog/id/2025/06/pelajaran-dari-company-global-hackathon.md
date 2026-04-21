@@ -2,7 +2,6 @@
 title: 'Belajar dari Hackathon Global: Bangun AI untuk Ekstraksi Sertifikat'
 pubDate: 2025-06-14
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

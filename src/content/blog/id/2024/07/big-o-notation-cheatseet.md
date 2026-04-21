@@ -2,7 +2,6 @@
 title: 'Big O Notation Cheatseet'
 pubDate: 2024-07-13
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

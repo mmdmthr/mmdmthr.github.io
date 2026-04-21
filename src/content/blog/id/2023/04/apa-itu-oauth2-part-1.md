@@ -2,7 +2,6 @@
 title: Apa Itu OAuth2 part 1
 pubDate: 2023-04-16
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

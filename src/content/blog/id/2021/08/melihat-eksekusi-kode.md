@@ -2,7 +2,6 @@
 title: Melihat Eksekusi Kode, Langkah demi Langkah
 pubDate: 2021-08-16
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

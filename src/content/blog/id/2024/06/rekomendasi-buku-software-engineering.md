@@ -2,7 +2,6 @@
 title: 'Rekomendasi Buku Software Engineering, Karir dan Pengembangan Diri'
 pubDate: 2024-06-21
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

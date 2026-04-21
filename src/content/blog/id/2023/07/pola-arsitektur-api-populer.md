@@ -2,7 +2,6 @@
 title: '6 Pola Arsitektur API yang Populer Saat Ini'
 pubDate: 2023-07-22
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'notes'
 ---
 

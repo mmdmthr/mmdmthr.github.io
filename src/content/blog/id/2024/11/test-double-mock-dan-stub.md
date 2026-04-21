@@ -2,7 +2,6 @@
 title: 'Test Double: Mock dan Stub'
 pubDate: 2024-11-09
 description: ''
-heroImage: '/blog-placeholder-2.jpg'
 tags: 'testing'
 ---
 
