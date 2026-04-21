@@ -7,12 +7,27 @@ import { getCollection } from 'astro:content';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 const posts = await getCollection('blog');
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Person',
+	name: 'Hari',
+	url: 'https://mmdmthr.github.io/',
+	description: 'Software developer who builds tools that help people work better.',
+	sameAs: ['https://github.com/mmdmthr'],
+	mainEntityOfPage: {
+		'@type': 'WebSite',
+		name: SITE_TITLE,
+		url: 'https://mmdmthr.github.io/',
+	},
+};
 ---
 
 <!doctype html>
 <html lang="en" class="scroll-smooth">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 	</head>
 	<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
 		<Header />
