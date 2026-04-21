@@ -2,6 +2,18 @@
 import BaseHead from ‘../components/BaseHead.astro’;
 import Header from ‘../components/Header.astro’;
 import Footer from ‘../components/Footer.astro’;
+
+const jsonLd = {
+	‘@context’: ‘https://schema.org’,
+	‘@type’: ‘AboutPage’,
+	name: ‘About Hari’,
+	url: ‘https://mmdmthr.github.io/about/’,
+	author: {
+		‘@type’: ‘Person’,
+		name: ‘Hari’,
+		url: ‘https://mmdmthr.github.io/’,
+	},
+};
 ---
 
 <!doctype html>
@@ -11,17 +23,7 @@ import Footer from ‘../components/Footer.astro’;
 			title="About Me"
 			description="I’m Hari, a software developer who builds tools that help people work better. I write about software development, tech, and work on my blog."
 		/>
-		<script type="application/ld+json" set:html={JSON.stringify({
-			‘@context’: ‘https://schema.org’,
-			‘@type’: ‘AboutPage’,
-			name: ‘About Hari’,
-			url: ‘https://mmdmthr.github.io/about/’,
-			author: {
-				‘@type’: ‘Person’,
-				name: ‘Hari’,
-				url: ‘https://mmdmthr.github.io/’,
-			},
-		})} />
+		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 	</head>
 	<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
 		<Header />
