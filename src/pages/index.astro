@@ -7,13 +7,22 @@ import { getCollection } from 'astro:content';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 const posts = await getCollection('blog');
+const englishPosts = posts.filter(post => post.collection === 'blog');
+
+// Get featured posts
+const featuredPosts = englishPosts.filter(post => post.data.featured).slice(0, 3);
+
+// Get posts by category for pillars
+const buildPosts = englishPosts.filter(post => post.data.category === 'Build').slice(0, 2);
+const understandPosts = englishPosts.filter(post => post.data.category === 'Understand').slice(0, 2);
+const thinkPosts = englishPosts.filter(post => post.data.category === 'Think').slice(0, 2);
 
 const jsonLd = {
 	'@context': 'https://schema.org',
 	'@type': 'Person',
 	name: 'Hari',
 	url: 'https://mmdmthr.github.io/',
-	description: 'Software developer who builds tools that help people work better.',
+	description: 'Software developer who builds things, figures out how they work, and writes down what I learn.',
 	sameAs: ['https://github.com/mmdmthr'],
 	mainEntityOfPage: {
 		'@type': 'WebSite',
@@ -21,6 +30,19 @@ const jsonLd = {
 		url: 'https://mmdmthr.github.io/',
 	},
 };
+
+const categoryPillar = (categoryName: string, description: string, count: number) => ({
+	name: categoryName,
+	description,
+	url: `/blog?category=${categoryName.toLowerCase()}`,
+	count,
+});
+
+const pillars = [
+	categoryPillar('Build', 'Things I built and what I learned while building them.', buildPosts.length),
+	categoryPillar('Understand', 'Technical concepts I explored because I wanted to know how they actually work.', understandPosts.length),
+	categoryPillar('Think', 'Lessons and reflections from software, work, learning, and building.', thinkPosts.length),
+];
 ---
 
 <!doctype html>
@@ -31,34 +53,110 @@ const jsonLd = {
 	</head>
 	<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
 		<Header />
-		<main class="content-container py-16">
-			<!-- Hero Section -->
-			<section class="max-w-3xl mx-auto text-center mb-16">
-				<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-6">
-					Hi, I'm <span class="text-primary-600 dark:text-primary-400">Hari</span> 👋
+		<main class="content-container py-12 md:py-16">
+			<!-- Hero Section - Core Positioning -->
+			<section class="max-w-3xl mx-auto text-center mb-16 md:mb-20">
+				<h1 class="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-8 leading-tight">
+					I build things, figure out how they work, and write down what I learn.
 				</h1>
 				
-				<div class="prose-vitesse text-lg leading-relaxed space-y-6">
-					<p class="text-gray-700 dark:text-gray-300">
-						I'm a software developer who builds tools that help people work better — whether it's automating internal processes, launching MVPs, or supporting growing teams with clean and maintainable code.
-					</p>
+				<p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+					This is my public notebook on software development, engineering practices, and lessons from building real software.
+				</p>
+			</section>
 
-					<p class="text-gray-700 dark:text-gray-300">
-						This blog is where I share thoughts on software development, tech, solo projects, and life. I also reflect on work, habits, and sustainability. You can learn more <a href="/about" class="text-primary-600 dark:text-primary-400 hover:underline">about me here</a>.
-					</p>
+			<!-- Content Pillars -->
+			<section class="max-w-4xl mx-auto mb-16 md:mb-20">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+					{pillars.map((pillar) => (
+						<div class="border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:border-gray-300 dark:hover:border-gray-700 transition-colors duration-200">
+							<h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">
+								{pillar.name}
+							</h2>
+							<p class="text-sm text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+								{pillar.description}
+							</p>
+							<a 
+								href={pillar.url} 
+								class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-sm font-medium transition-colors duration-200"
+							>
+								Explore
+								<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+								</svg>
+							</a>
+						</div>
+					))}
 				</div>
 			</section>
-		  
-			<!-- Latest Posts -->
-			<section class="max-w-3xl mx-auto">
-				<LatestPosts posts={posts} />
+
+			<!-- Featured / Start Here Section -->
+			{featuredPosts.length > 0 && (
+				<section class="max-w-3xl mx-auto mb-16 md:mb-20">
+					<h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8">
+						Start Here
+					</h2>
+					
+					<div class="space-y-6">
+						{featuredPosts.map((post) => (
+							<article class="border-l-4 border-primary-500 pl-6">
+								<h3 class="text-lg font-semibold mb-2">
+									<a 
+										href={`/blog/${post.id}/`}
+										class="text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+									>
+										{post.data.title}
+									</a>
+								</h3>
+								<p class="text-gray-600 dark:text-gray-400 text-sm mb-2">
+									{post.data.description}
+								</p>
+								{post.data.category && (
+									<span class="inline-block px-2 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded text-xs font-medium">
+										{post.data.category}
+									</span>
+								)}
+							</article>
+						))}
+					</div>
+				</section>
+			)}
+
+			<!-- Latest Writing -->
+			<section class="max-w-3xl mx-auto mb-16 md:mb-20">
+				<h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8">
+					Latest Writing
+				</h2>
+				
+				<LatestPosts posts={englishPosts} />
 				
 				<div class="mt-8 text-center">
 					<a 
 						href="/blog" 
 						class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors duration-200"
 					>
-						Read more posts 
+						View all articles
+						<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+						</svg>
+					</a>
+				</div>
+			</section>
+
+			<!-- About Preview -->
+			<section class="max-w-3xl mx-auto">
+				<div class="border-t border-gray-200 dark:border-gray-800 pt-12">
+					<h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+						Who is this for?
+					</h2>
+					<p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+						If you're a developer interested in learning through building, investigating how technologies actually work, or understanding software engineering trade-offs, there's probably something here for you.
+					</p>
+					<a 
+						href="/about" 
+						class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors duration-200"
+					>
+						Learn more about me
 						<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
 						</svg>

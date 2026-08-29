@@ -8,7 +8,7 @@ import { SITE_TITLE } from '../consts';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate, category, tags, series } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
@@ -30,6 +30,7 @@ const jsonLd = {
 		name: SITE_TITLE,
 		url: Astro.site?.toString(),
 	},
+	...(tags && tags.length > 0 && { keywords: tags.join(', ') }),
 };
 
 const breadcrumbLd = {
@@ -71,6 +72,29 @@ const breadcrumbLd = {
 			<article class="max-w-3xl mx-auto" data-pagefind-body>
 				<!-- Article Header -->
 				<header class="mb-8 text-center">
+					<!-- Category and Tags -->
+					<div class="mb-4 flex flex-wrap items-center justify-center gap-2">
+						{category && (
+							<span class="inline-block px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">
+								{category}
+							</span>
+						)}
+						{tags && tags.length > 0 && (
+							tags.map((tag) => (
+								<span class="inline-block px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm">
+									{tag}
+								</span>
+							))
+						)}
+					</div>
+
+					<!-- Series Info -->
+					{series && (
+						<div class="mb-4 text-sm text-gray-600 dark:text-gray-400 italic">
+							{series.name} • Part {series.part}
+						</div>
+					)}
+
 					<div class="mb-4">
 						<span class="text-sm text-gray-500 dark:text-gray-400">
 							<FormattedDate date={pubDate} />

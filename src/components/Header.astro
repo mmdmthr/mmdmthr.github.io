@@ -20,7 +20,6 @@ import { SITE_TITLE } from '../consts';
 				<div class="flex items-center space-x-1">
 					<HeaderLink href="/" class="nav-link">Home</HeaderLink>
 					<HeaderLink href="/blog" class="nav-link">Blog</HeaderLink>
-					<HeaderLink href="/gallery" class="nav-link">Gallery</HeaderLink>
 					<HeaderLink href="/about" class="nav-link">About</HeaderLink>
 				</div>
 			</div>
@@ -44,12 +43,15 @@ import { SITE_TITLE } from '../consts';
 				</a>
 			</div>
 			
-			<!-- Mobile menu button (for future mobile navigation) -->
+			<!-- Mobile menu button -->
 			<div class="md:hidden">
 				<button 
 					type="button" 
-					class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 p-2"
-					aria-label="Open menu"
+					id="mobile-menu-button"
+					class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 p-2 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-offset-gray-900"
+					aria-label="Toggle navigation menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
 				>
 					<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -57,5 +59,74 @@ import { SITE_TITLE } from '../consts';
 				</button>
 			</div>
 		</div>
+
+		<!-- Mobile Navigation Menu -->
+		<div 
+			id="mobile-menu" 
+			class="hidden md:hidden border-t border-gray-200 dark:border-gray-800"
+			aria-hidden="true"
+		>
+			<div class="px-2 pt-2 pb-3 space-y-1">
+				<a
+					href="/"
+					class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 nav-link"
+				>
+					Home
+				</a>
+				<a
+					href="/blog"
+					class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 nav-link"
+				>
+					Blog
+				</a>
+				<a
+					href="/about"
+					class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 nav-link"
+				>
+					About
+				</a>
+			</div>
+		</div>
 	</nav>
 </header>
+
+<script>
+	// Mobile menu toggle
+	const button = document.getElementById('mobile-menu-button');
+	const menu = document.getElementById('mobile-menu');
+
+	if (button && menu) {
+		button.addEventListener('click', () => {
+			const isOpen = menu.classList.contains('hidden');
+			if (isOpen) {
+				menu.classList.remove('hidden');
+				menu.setAttribute('aria-hidden', 'false');
+				button.setAttribute('aria-expanded', 'true');
+			} else {
+				menu.classList.add('hidden');
+				menu.setAttribute('aria-hidden', 'true');
+				button.setAttribute('aria-expanded', 'false');
+			}
+		});
+
+		// Close menu when a link is clicked
+		const links = menu.querySelectorAll('a');
+		links.forEach((link) => {
+			link.addEventListener('click', () => {
+				menu.classList.add('hidden');
+				menu.setAttribute('aria-hidden', 'true');
+				button.setAttribute('aria-expanded', 'false');
+			});
+		});
+
+		// Close menu when pressing Escape
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
+				menu.classList.add('hidden');
+				menu.setAttribute('aria-hidden', 'true');
+				button.setAttribute('aria-expanded', 'false');
+				button.focus();
+			}
+		});
+	}
+</script>

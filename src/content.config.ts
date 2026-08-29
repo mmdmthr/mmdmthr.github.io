@@ -11,6 +11,19 @@ const blog = defineCollection({
 		// Transform string to Date object
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
+		// New fields for content organization
+		tags: z.union([
+			z.array(z.string()),
+			z.string().transform((val) => [val]),
+		]).optional(),
+		category: z.enum(['Build', 'Understand', 'Think']).optional(),
+		featured: z.boolean().optional(),
+		draft: z.boolean().optional(),
+		// Series support
+		series: z.object({
+			name: z.string(),
+			part: z.number(),
+		}).optional(),
 	}),
 });
 
@@ -24,6 +37,19 @@ const blogId = defineCollection({
 		// Transform string to Date object
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
+		// New fields for content organization
+		tags: z.union([
+			z.array(z.string()),
+			z.string().transform((val) => [val]),
+		]).optional(),
+		category: z.enum(['Build', 'Understand', 'Think']).optional(),
+		featured: z.boolean().optional(),
+		draft: z.boolean().optional(),
+		// Series support
+		series: z.object({
+			name: z.string(),
+			part: z.number(),
+		}).optional(),
 	}),
 });
 
