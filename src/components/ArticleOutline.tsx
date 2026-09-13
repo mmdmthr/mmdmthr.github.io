@@ -118,8 +118,8 @@ function TableOfContents({
 								block text-sm transition-colors duration-200 py-1
 								${
 									isActive
-										? 'text-primary-600 dark:text-primary-400 font-medium'
-										: 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+										? 'text-primary-500 dark:text-primary-500 font-medium'
+										: 'text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-300'
 								}
 							`}
 						>
