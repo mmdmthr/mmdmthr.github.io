@@ -17,7 +17,7 @@ Not because there were too few options. Because there were too many. I kept jump
 
 ---
 
-**Things shifted when I started browsing jobs on Upwork.**
+## Things shifted when I started browsing jobs on Upwork.
 
 At first, just out of curiosity. But I quickly noticed the job listings exposed me to something my day job never did:
 
@@ -27,7 +27,7 @@ At first, just out of curiosity. But I quickly noticed the job listings exposed 
 
 ---
 
-**Take search as an example.**
+## Take search as an example.
 
 As a user, I use search all the time. As a developer, I had no idea how to implement it properly. Tools like Algolia or Elasticsearch always felt out of reach — heavy setup, credit card required, unclear where to even start. So I never explored them.
 
@@ -35,7 +35,7 @@ But browsing Upwork, I started discovering alternatives. Some solutions rely on 
 
 ---
 
-**From there, my approach became simple:**
+## From there, my approach became simple
 
 1. Pick one small problem from a real job listing
 2. Find a solution I can actually run locally
@@ -47,7 +47,7 @@ What changed is this: I no longer learn from *topics*. I learn from *needs*. And
 
 ---
 
-**Now my flow looks like this:**
+## Now my flow looks like this
 
 Browse jobs → find one requirement I don't fully understand → build a minimal implementation → write a blog post about it.
 

@@ -1,0 +1,56 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+	relatedArticles: CollectionEntry<'blog'>[];
+}
+
+const { relatedArticles } = Astro.props;
+
+if (relatedArticles.length === 0) {
+	return null;
+}
+---
+
+<section class="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
+	<h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">Related writing</h2>
+	
+	<ul class="space-y-4">
+		{relatedArticles.map((article) => (
+			<li class="group">
+				<a
+					href={`/blog/${article.id}/`}
+					class="flex flex-col gap-2 p-4 rounded-lg bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+				>
+					<div class="flex items-baseline gap-2">
+						<h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+							{article.data.title}
+						</h3>
+						{article.data.category && (
+							<span class="text-xs font-medium text-primary-600 dark:text-primary-400 whitespace-nowrap">
+								{article.data.category}
+							</span>
+						)}
+					</div>
+					
+					{article.data.description && (
+						<p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
+							{article.data.description}
+						</p>
+					)}
+					
+					<div class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400 mt-1">
+						<FormattedDate date={article.data.pubDate} />
+						{article.data.tags && article.data.tags.length > 0 && (
+							<>
+								<span>•</span>
+								<span>{article.data.tags.slice(0, 2).join(', ')}</span>
+							</>
+						)}
+					</div>
+				</a>
+			</li>
+		))}
+	</ul>
+</section>
