@@ -1,7 +1,7 @@
 ---
-title: 'Knowing More Isn't the Same as Knowing What Matters'
-pubDate: 2026-10-14
-description: "AI can help us understand more, remember less, and move faster. But knowing more isn't the same as knowing what matters."
+title: 'Knowing More Isn''t the Same as Knowing What Matters'
+pubDate: 2026-10-15
+description: 'AI can help us understand more, remember less, and move faster. But knowing more isn''t the same as knowing what matters.'
 tags: 'notes'
 ---
 
